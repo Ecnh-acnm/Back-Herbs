@@ -1,0 +1,233 @@
+/* Body Styling  */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif; 
+  scroll-behavior: smooth;
+  scrollbar-color: #455F41, lightgrey;
+  scrollbar-width: thin;
+  width: 100%;
+}
+
+/* Menu Overlay Mobile */
+.toggle {
+    display:none;
+}
+.toggle:before {
+    display:none;
+}
+.toggle.active:before {
+    display:none;
+}
+.sidebar {
+    display:none;
+}
+
+/* Left heading for welcome page */
+.leftHeading {
+  width: 30%;
+  min-width: 490px;
+  color: #000;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.74px;
+  position: relative;
+  display: inline-block;
+  top: 48%;
+  left: 10%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.leftHeading > button {
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 0px;
+  color: white;
+  background-color: #455F41;
+  cursor: pointer;
+}
+
+/*Generic heading splash on non welcome pages */
+.splashHeading {
+  padding-top: 70px;
+  padding-right: 70px;
+  padding-left: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+  /* background-color: #B4BFB3;*/
+  background-image: url(Images/Bgs/pexels-karolina-grabowska-4198139.jpg);
+  background-position: center, top;
+  line-height: 2.6;
+}
+/*The h2 element is used on top of the splash heading on all generic pages */
+h2 {
+  color: #000;
+  font-family: Inter, sans-serif;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 141.5%; /* 96.22px */
+  letter-spacing: 13.26px;
+}
+
+/*All square clickable links use this stylying and class */
+.menuBox {
+  width: 290px;
+  height: 250px;
+  margin: 40px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.713);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* Square navigation items below banner */
+.menuBox a {
+  color:white;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+
+/* Menu top bar */  
+.menubar {
+  background: linear-gradient(90deg, #455F41 , rgb(180, 191, 179, 0.5));
+  width: 100%;
+  position: fixed;
+  align-items: stretch;
+  font-size: 16px;
+  height: 60px;
+  display: flex;
+  z-index: 1;
+}
+ 
+.menubar a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* drop down menu buttons in desktop nav bar */
+.dropbtn {
+  color: white;
+  padding: 20px;
+  border: none;
+  width: 90px;
+  font-weight: bold;
+}
+
+.dropbtn:hover {
+  background-color: rgb(180, 191, 179, 0.5);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 122px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: flex;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  z-index: 999;
+  width: 90px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;    
+  z-index: 999;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: rgb(180, 191, 179, 0.5);
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  height:auto;
+  color: white;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  align-content: center;
+  z-index: 999;
+}
+
+/*General work area */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row;
+  overflow: auto;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+/*Styled paragraphs in central column on generic pages */
+.mainText {
+    padding: 10px;
+    line-height: 1.5;
+    position: center;
+    width: 80%;
+}
+
+
+/*IDs for multiple different pages to style menubox objects with specific images. will be moved to secondary specific stylesheets*/
+#menu1 {
+  object-fit: cover;
+  background-image: url(https://images.pexels.com/photos/18552106/pexels-photo-18552106/free-photo-of-blooming-red-garden-nasturtium-flower.jpeg?auto=compress&cs=tinysrgb&w=1200);
+}
+
+#menu2 {
+  object-fit: cover;
+  background-image: url(https://images.pexels.com/photos/18500135/pexels-photo-18500135/free-photo-of-close-up-of-a-dahlia-flower.jpeg?auto=compress&cs=tinysrgb&w=1200);
+}
+
+#menu3 {
+  object-fit: cover;
+  background-image: url(https://images.pexels.com/photos/18514150/pexels-photo-18514150/free-photo-of-green-plant-with-flower.jpeg?auto=compress&cs=tinysrgb&w=1200);
+}
+#rockRose {
+  object-fit: cover;
+  background-image: url(fear-flowers/icons/rockrosetile.png);
+}
+#aspen {
+  object-fit: cover;
+  background-image: url(fear-flowers/icons/aspenTile.png);
+}
+#cherryPlum {
+  object-fit: cover;
+  background-image: url(fear-flowers/icons/cherryplumtile.png);
+}
+#Minulus {
+  object-fit: cover;
+  background-image: url(fear-flowers/icons/minulusTile.png);
+}
+#redChestnut {
+  object-fit: cover;
+  background-image: url(fear-flowers/icons/redchestnuttile.png);
+}

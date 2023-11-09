@@ -1,0 +1,102 @@
+/* Search Page Styling */
+body {
+    background-image: linear-gradient(rgb(255 255 255 / 95%), rgba(255, 255, 255, 0)),url(Images/Bgs/flower-bg-2.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*Generic heading splash on non welcome pages */
+.splashHeading {
+    background-image: none;
+    padding-top: 90px;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    background-color:none;
+  }
+
+/* Searchable items are the bars themselves that contain links and the JS looks thruogh for a match */
+.searchableItem {
+    display: none;
+    background: linear-gradient(90deg, #455F41 , rgb(180, 191, 179, 0.5));
+    margin: 20px;
+    border-radius: 15px;
+    width: 80vw;
+    align-items: center;
+    height: 60px;
+    list-style: none;
+    padding: 15px;
+    line-height: 60px;
+}
+
+.searchableItem > a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.searchImageAsset {
+    width: 10%;
+    float: right;
+    object-fit: cover;
+    mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+/*Search bar styling and animation */
+input[type=text] {
+    width: 25px;
+    align-self: center;
+    padding: 30px;
+    border-radius: 90px;
+    font-size: 20px;
+    background-color: #455F41;
+    color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    transition: width 0.8s ease-in-out;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 30px;
+ 
+
+}
+/*Search bar focus */
+input[type=text]:focus {
+    width: 40vw;
+}
+#flowerList {
+    padding: 0px;
+}
+/*Container to align searchb bar */
+.searchBox {
+    width:100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: row;
+    overflow-x: hidden;
+    justify-content: space-evenly;
+    
+}
+
+@media (max-width: 700px) {
+    body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif; 
+    scroll-behavior: smooth;
+    scrollbar-color: #455F41, lightgrey;
+    scrollbar-width: thin;
+    background-image: linear-gradient(rgb(255 255 255 / 95%), rgb(255 255 255 / 70%) , rgba(255, 255, 255, 0)),url(Images/Bgs/flower-bg-3.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+}

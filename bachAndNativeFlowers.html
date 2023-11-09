@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html charset="utf-8">
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>Bach and Native Flowers</title>
+  <link rel="stylesheet" href="mainStylesheet.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <link rel="icon" href="Images/leaf-icon.png">
+
+</head>
+
+<body>
+  <!--From toggle to sidebar (inclusive) is the mobile menu. Triggers at 900 pixels in width but may adjust.-->
+  <div class="toggle"></div>
+  <div class="sidebar">
+    <ul class="hiddenMenu">
+      <li class="navitem"><a href="homePage.html" target="_blank" data-text="Home" class="navMobileLink">Home</a></li>
+      <li class="navitem"><a href="fullFlowerList.html" data-text="Flower list" class="navMobileLink">Flower list</a></li>
+      <li class="navitem"><a href="bachAndNativeFlowers.html" data-text="Flower types" class="navMobileLink">Flower types</a></li>
+      <li class="navitem"><a href="emotionsHome.html" data-text="Emotions" class="navMobileLink">Emotions</a></li>
+    </ul>
+  </div>
+  <!--onkeyup="myFunction()" this was in the input bar to access the JS code to search by id-->
+  <!--Menu bar for navigation, from menubar div to the input div. Turns off at 900 pixels and under-->
+<div class="menubar">
+<div class="dropdown">
+  <a class="dropbtn"href="homePage.html">Home</a>
+</div>
+<div class="dropdown">
+  <a class="dropbtn">Flower list</a>
+  <div class="dropdown-content">
+    <a href="bachFlowerList.html">Bach Flowers</a>
+    <a href="nativeFlowerList.html">Native Flowers</a>
+    <a href="fullFlowerList.html">Full Flower List</a>
+  </div>
+</div>
+    <div class="dropdown">
+      <a class="dropbtn">Emotions</a>
+      <div class="dropdown-content">
+        <a href="emotionsHome.html">Emotions Homepage</a>
+        <a href="emotionsBach.html">Bach Emotions</a>
+        <a href="emotionsNative.html">Native Emotions</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn"href="bachFlowers.html">Bach</a>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn"href="nativeFlowers.html">Native</a>
+    </div>
+</div>
+    <div class="splashHeading">
+      <h2>Bach flowers and Native flowers</h2>
+    </div>
+<div class="main">
+<div class="mainText">
+    <p class="p-body">
+      Bach flowers and native flowers differ significantly in their origin and usage. Bach flowers refer to a system of flower remedies developed by Dr. Edward Bach in the 1930s, primarily used for emotional and psychological well-being. These remedies are created by infusing non-native flowers in water and are believed to help balance emotions.
+In contrast, native flowers are the indigenous flora of a specific region or country, naturally occurring without human intervention. They have ecological importance and often support local wildlife and pollinators. Native flowers are commonly used in landscaping and gardening to promote biodiversity and are appreciated for their aesthetic beauty. While Bach flowers focus on emotional healing, native flowers play a vital role in the ecosystem and local environment.</p>
+    </div>
+
+<div class="menuBox" id="menu1">
+    <a href="bachFlowers.html" target="_blank">Bach Flowers</a>
+  </div>
+  <div class="menuBox" id="menu2">
+    <a href="nativeFlowers.html" target="_blank">Native Flowers</a>
+  </div>
+</div>
+
+    <footer>
+        <p>Endeavour College of Natural Health © 2023</p>
+    </footer>
+    </body>
+    </html>
+    
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.toggle').click(function(){
+                    $('.toggle').toggleClass('active')
+                    $('.sidebar').toggleClass('active')
+                })
+            })
+        </script>

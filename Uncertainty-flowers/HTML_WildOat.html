@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html charset="utf-8">
+
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>Wild Oat</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <link rel="stylesheet" href="mainStylesheet.css">
+  <link rel="stylesheet" href="flowerInfoStyleSheet.css">
+  <link rel="icon" href="Images/favicon.png">
+</head>
+
+<body><!DOCTYPE html>
+  <html charset="utf-8">
+  
+  
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Scleranthus</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="mainStylesheet.css">
+    <link rel="stylesheet" href="flowerInfoStyleSheet.css">
+    <link rel="icon" href="Images/favicon.png">
+  </head>
+  
+  <body>
+    <!--From toggle to sidebar (inclusive) is the mobile menu. Triggers at 900 pixels in width but may adjust.-->
+    <div class="toggle"></div>
+    <div class="sidebar">
+      <ul class="hiddenMenu">
+        <li class="navitem"><a href="homePage.html" target="_blank" data-text="Home" class="navMobileLink">Home</a></li>
+        <li class="navitem"><a href="fullFlowerList.html" data-text="Flower list" class="navMobileLink">Flower list</a></li>
+        <li class="navitem"><a href="bachAndNativeFlowers.html" data-text="Flower types" class="navMobileLink">Flower types</a></li>
+        <li class="navitem"><a href="emotionsHome.html" data-text="Emotions" class="navMobileLink">Emotions</a></li>
+      </ul>
+    </div>
+    <!--onkeyup="myFunction()" this was in the input bar to access the JS code to search by id-->
+    <!--Menu bar for navigation, from menubar div to the input div. Turns off at 900 pixels and under-->
+  <div class="menubar">
+  <div class="dropdown">
+    <a class="dropbtn"href="homePage.html">Home</a>
+  </div>
+  <div class="dropdown">
+    <a class="dropbtn">Flower list</a>
+    <div class="dropdown-content">
+      <a href="bachFlowerList.html">Bach Flowers</a>
+      <a href="nativeFlowerList.html">Native Flowers</a>
+      <a href="fullFlowerList.html">Full Flower List</a>
+    </div>
+  </div>
+      <div class="dropdown">
+        <a class="dropbtn">Emotions</a>
+        <div class="dropdown-content">
+          <a href="emotionsHome.html">Emotions Homepage</a>
+          <a href="emotionsBach.html">Bach Emotions</a>
+          <a href="emotionsNative.html">Native Emotions</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a class="dropbtn"href="bachFlowers.html">Bach</a>
+      </div>
+      <div class="dropdown">
+        <a class="dropbtn"href="nativeFlowers.html">Native</a>
+      </div>
+  </div>
+  
+  
+  <div class="herbColumn">
+    <h2><strong>Wild Oat</strong></h2>
+      <h3><em>Bromus ramosus</em></h3>
+      <div class="infoBox"><h3>Keywords</h3>
+        <p>: Uncertainty as to the correct path in life.</p></div>
+      <div class="infoBox"><h3>Negative Indications</h3>
+        <p>: Crossroads reached, undecided, uncertain and unable to choose one of many paths. Despondent, frustrated and dissatisfied, life passing them by.</p></div>
+      <div class="infoBox"><h3>Positive Outcomes</h3>
+        <p>: Knowledge of true vocation or purpose in life: definite character, talents, and ambitions.Lives a life with usefulness and happiness.</p></div>
+      <div class="infoBox"><h3>Clinical Applications and Uses</h3>
+        <p>: 
+          <ul>
+            <li>These people will be drifters and feel apathetic, but with Wild Oat, they can prioritise and redefine their future direction.</li>
+            <li>Those desiring a change of direction, experiencing a mid-life crisis or vocational crisis are indicated and can finally hear their life calling. They will be a 'jack of all trades and a master of them too'.</li>
+            <li>Wild Oat acts as a vocational guide for the soul.</li>
+          </ul>
+      </p>
+    </div>
+    <p class="credit">(Bach Center, 2007; Chancellor, 
+      1995; Scheffer, 1988; Wells, 2002).
+      <br>Image Credit: (Michels, 2007).</p>        
+  </div>
+  
+  <div class="imageBar">
+    <img class="ImageAsset"
+      src="Images/wildOat-1.png"
+      alt="Wild Oat">
+    <img class="ImageAsset"
+      src="Images/wildOat-2.png"
+      alt="Wild Oat"> 
+      <p class="videoLink">
+        <a href="https://youtu.be/YryH_O2mSEs" 
+        target="_blank">Click here for more information 
+        about Scleranthus.</a>   
+  </div>
+  <footer>
+    <p>Endeavour College of Natural Health © 2023</p>
+  </footer>
+          
+    </body>
+  
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+      <script type="text/javascript">
+          $(document).ready(function(){
+              $('.toggle').click(function(){
+                  $('.toggle').toggleClass('active')
+                  $('.sidebar').toggleClass('active')
+              })
+          })
+      </script>

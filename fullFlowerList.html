@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html charset="utf-8">
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>List of all herbs</title>
+  <link rel="stylesheet" href="mainStylesheet.css">
+  <link rel="stylesheet" href="searchStylesheet.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <link rel="icon" href="Images/Icons/leaf-icon.png">
+
+</head>
+
+<body>
+  <!--From toggle to sidebar (inclusive) is the mobile menu. Triggers at 900 pixels in width but may adjust.-->
+  <div class="toggle"></div>
+  <div class="sidebar">
+    <ul class="hiddenMenu">
+      <li class="navitem"><a href="homePage.html" target="_blank" data-text="Home" class="navMobileLink">Home</a></li>
+      <li class="navitem"><a href="fullFlowerList.html" data-text="Flower list" class="navMobileLink">Flower list</a></li>
+      <li class="navitem"><a href="bachAndNativeFlowers.html" data-text="Flower types" class="navMobileLink">Flower types</a></li>
+      <li class="navitem"><a href="emotionsHome.html" data-text="Emotions" class="navMobileLink">Emotions</a></li>
+    </ul>
+  </div>
+  <!--onkeyup="myFunction()" this was in the input bar to access the JS code to search by id-->
+  <!--Menu bar for navigation, from menubar div to the input div. Turns off at 900 pixels and under-->
+<div class="menubar">
+<div class="dropdown">
+  <a class="dropbtn"href="homePage.html">Home</a>
+</div>
+<div class="dropdown">
+  <a class="dropbtn">Flower list</a>
+  <div class="dropdown-content">
+    <a href="bachFlowerList.html">Bach Flowers</a>
+    <a href="nativeFlowerList.html">Native Flowers</a>
+    <a href="fullFlowerList.html">Full Flower List</a>
+  </div>
+</div>
+    <div class="dropdown">
+      <a class="dropbtn">Emotions</a>
+      <div class="dropdown-content">
+        <a href="emotionsHome.html">Emotions Homepage</a>
+        <a href="emotionsBach.html">Bach Emotions</a>
+        <a href="emotionsNative.html">Native Emotions</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn"href="bachFlowers.html">Bach</a>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn"href="nativeFlowers.html">Native</a>
+    </div>
+</div>
+  
+  <div class="splashHeading">
+     <p>This page is a resource to search for all and any flowers included in this subject.</p>
+  </div>
+
+  
+  
+  <div class="main">
+    <div class="searchBox">
+    <input type="text" id="searchBarInput" onkeyup="searchFunction()" placeholder="" title="Type in a name">
+  </div>
+    <ul id="flowerList">
+  <li class="searchableItem"><a href="fear-flowers/rock-rose.html" target="_blank">Rock Rose</a></li>
+  <li class="searchableItem"><a href="fear-flowers/minulus.html" target="_blank">Mimulus</a></li>
+  <li class="searchableItem"><a href="fear-flowers/cherry-plum.html" target="_blank">Cherry Plum</a></li>
+  <li class="searchableItem"><a href="fear-flowers/aspen.html" target="_blank">Aspen</a></li>
+  <li class="searchableItem"><a href="fear-flowers/red-chestnut.html" target="_blank">Red Chestnut</a></li>
+  <li class="searchableItem"><a href="Uncertainty-flowers/HTML_Cerato.html" target="_blank">Cerato</a></li>
+  <li class="searchableItem"><a href="Uncertainty-flowers/HTML_Gentian.html" target="_blank">Gentian</a></li>
+  <li class="searchableItem"><a href="Uncertainty-flowers/HTML_Gorse.html" target="_blank">Gorse</a></li>
+  <li class="searchableItem"><a href="Uncertainty-flowers/HTML_RedHornbeam.html" target="_blank">Red Hornbeam</a></li>
+  <li class="searchableItem"><a href="Uncertainty-flowers/HTML_Scleranthus.html" target="_blank">Scleranthus</a></li>
+  <li class="searchableItem"><a href="Uncertainty-flowers/HTML_WildOat.html" target="_blank">Wild Oat</a></li>
+  <li class="searchableItem"><a href="lack-of-interest-flowers/HTML_ChestnutBud.html" target="_blank">Chestnut Bud</a></li>
+  <li class="searchableItem"><a href="lack-of-interest-flowers/HTML_Clematis.html" target="_blank">Clematis</a></li>
+  <li class="searchableItem"><a href="lack-of-interest-flowers/HTML_Honeysuckle.html" target="_blank">Honeysuckle</a></li>
+  <li class="searchableItem"><a href="lack-of-interest-flowers/HTML_Mustard.html" target="_blank">Mustard</a></li>
+  <li class="searchableItem"><a href="lack-of-interest-flowers/HTML_Olive.html" target="_blank">Olive</a></li>
+  <li class="searchableItem"><a href="lack-of-interest-flowers/HTML_WhiteChestnut.html" target="_blank">White Chestnut</a></li>
+  <li class="searchableItem"><a href="lack-of-interest-flowers/HTML_WildRose.html" target="_blank">Wild Rose</a></li>
+  <li class="searchableItem"><a href="fear-flowers/aspen.html" target="_blank">Aspen  </a></li>
+  <li class="searchableItem"><a href="fear-flowers/red-chestnut.html" target="_blank">Red Chestnut </a></li>
+</ul>
+</div>
+
+<footer>
+    <p>Endeavour College of Natural Health © 2023</p>
+</footer>
+        
+  </body>
+
+  <script
+	src="https://code.jquery.com/jquery-3.7.1.js"
+	integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+	crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('.sidebar').toggleClass('active')
+            })
+        })
+
+
+  function searchFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("searchBarInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("flowerList");
+    li = ul.getElementsByClassName("searchableItem");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "block";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+
+    </script>
+		

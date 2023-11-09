@@ -1,0 +1,163 @@
+/* body styling */
+body {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 60) 15%, white),url(Images/Splash/daisies.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: relative;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+.main {
+  margin-bottom: 200px;
+}
+/*Styled list items for emotion pages */
+.emotionsListShell {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:  space-between;
+  margin-bottom: 80px;
+}
+
+.listItem {
+  flex: 1;
+  color: black;
+  line-height: 3;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 150px;
+  height: 70px;
+  text-align: center;
+  align-content: center;
+  border-width: 5px;
+  border-style: solid;
+  border-image: 
+  linear-gradient(
+    to bottom, 
+    #455F41, 
+    rgba(0, 0, 0, 0)
+  ) 1 100%;
+  position: relative;
+  display: inline-block;
+  /*border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px) 60;*/
+}
+
+
+.listItem:hover {
+    background: linear-gradient(180deg, #455F41 , rgb(180, 191, 179, 0.5));
+    color: white;
+    border-width: 5px;
+    border-style: solid;
+    border-image: none;
+    border-color:#455F41;
+}
+
+/* Drop down button styling for navigating to flowers */
+.dropTileButton {
+  border: none;
+  font-weight: bold;
+}
+
+
+.dropTile {
+  position: relative;
+  display: inline-block;
+}
+
+.dropListContent {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 122px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 33px;
+}
+
+.dropListContent a {
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: flex;
+}
+
+.dropListContent a:hover {
+  background-color: #ddd;
+  z-index: 999;
+  display: flex;
+}
+
+.listItem:hover .dropListContent {
+  display: inline-block;    
+  z-index: 999;
+}
+.toggleBox {
+  width: 59vw;
+  list-style-type: none;
+}
+ul {
+  padding-left: 0px;
+}
+
+
+.toggleBox li {
+  list-style-type: none;
+  line-height: 3;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px;
+  
+  color: white;
+}
+
+#bachFlowerList {
+  text-align: left;
+  display: none;
+}
+
+#bachFlowerList li {
+  background: linear-gradient(0.25turn, #455F41,  #fff);
+}
+
+#nativeFlowerList {
+  text-align: right;
+  display: none;
+}
+#nativeFlowerList li {
+  background: linear-gradient(0.25turn,  #fff, #455F41);
+}
+
+.menuBox {
+  margin: 118px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+@media (max-width: 1200px) {
+    /* body styling */
+body {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 60) 15%, white),url(Images/Splash/daisies.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+    /*Styled list items for emotion pages */
+.emotionsListShell {
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+  }
+  .listItem {
+    flex: 150px;
+  }
+}

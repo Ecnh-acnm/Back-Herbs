@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html charset="utf-8">
+
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>Gentian</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <link rel="stylesheet" href="mainStylesheet.css">
+  <link rel="stylesheet" href="flowerInfoStyleSheet.css">
+  <link rel="icon" href="Images/favicon.png">
+</head>
+
+<body>
+  <!--From toggle to sidebar (inclusive) is the mobile menu. Triggers at 900 pixels in width but may adjust.-->
+  <div class="toggle"></div>
+  <div class="sidebar">
+    <ul class="hiddenMenu">
+      <li class="navitem"><a href="homePage.html" target="_blank" data-text="Home" class="navMobileLink">Home</a></li>
+      <li class="navitem"><a href="fullFlowerList.html" data-text="Flower list" class="navMobileLink">Flower list</a></li>
+      <li class="navitem"><a href="bachAndNativeFlowers.html" data-text="Flower types" class="navMobileLink">Flower types</a></li>
+      <li class="navitem"><a href="emotionsHome.html" data-text="Emotions" class="navMobileLink">Emotions</a></li>
+    </ul>
+  </div>
+  <!--onkeyup="myFunction()" this was in the input bar to access the JS code to search by id-->
+  <!--Menu bar for navigation, from menubar div to the input div. Turns off at 900 pixels and under-->
+<div class="menubar">
+<div class="dropdown">
+  <a class="dropbtn"href="homePage.html">Home</a>
+</div>
+<div class="dropdown">
+  <a class="dropbtn">Flower list</a>
+  <div class="dropdown-content">
+    <a href="bachFlowerList.html">Bach Flowers</a>
+    <a href="nativeFlowerList.html">Native Flowers</a>
+    <a href="fullFlowerList.html">Full Flower List</a>
+  </div>
+</div>
+    <div class="dropdown">
+      <a class="dropbtn">Emotions</a>
+      <div class="dropdown-content">
+        <a href="emotionsHome.html">Emotions Homepage</a>
+        <a href="emotionsBach.html">Bach Emotions</a>
+        <a href="emotionsNative.html">Native Emotions</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn"href="bachFlowers.html">Bach</a>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn"href="nativeFlowers.html">Native</a>
+    </div>
+</div>
+
+
+<div class="herbColumn">
+  <h2><strong>Gentian</strong></h2>
+    <h3><em>Gentianella amarelle</em></h3>
+    <div class="infoBox"><h3>Keywords</h3>
+      <p>: Discouragement and despondency after setbacks.</p></div>
+    <div class="infoBox"><h3>Negative Indications</h3>
+      <p>: Doubt, despondency, and easily discouraged by difficulty. 
+        Depression from known origin, gives up easily.</p></div>
+    <div class="infoBox"><h3>Positive Outcomes</h3>
+      <p>: Conviction that difficulties will be overcome; 
+        failure is non-existent when doing one's best. 
+        Resilience in the face of setbacks; perseverance. 
+        Flexibility of outlook and broader perspective.</p></div>
+    <div class="infoBox"><h3>Clinical Applications and Uses</h3>
+      <p>: 
+        <ul>
+          <li>Gentian people are easily disheartened by minor setbacks at the level of their hopes and aspirations, particularly after hard work.
+
+            <li>Despondency with long-term or recurrent illness, or children feeling discouraged about schoolwork. The failure to achieve a desired performance (in sport, work, relationships, etc.) leaves them feeling discouraged.
+        
+              <li>Ideas of how life should be if happiness is achieved are too set and not grounded in reality.
+      </ul>
+      </p>
+  </div>
+  <p class="credit">(Bach Center, 2007; Chancellor, 
+    1995; Scheffer, 1988; Wells, 2002).
+    <br>Image Credit: (Rae, 2008).</p>        
+</div>
+
+<div class="imageBar">
+  <img class="ImageAsset"
+    src="Images/Gentian-1.png"
+    alt="Gentian">
+  <img class="ImageAsset"
+    src="Images/Gentian-2.png"
+    alt="Gentian">  
+</div>
+<footer>
+  <p>Endeavour College of Natural Health © 2023</p>
+</footer>
+        
+  </body>
+
+  <script
+	src="https://code.jquery.com/jquery-3.7.1.js"
+	integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+	crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('.sidebar').toggleClass('active')
+            })
+        })
+    </script>
+		
