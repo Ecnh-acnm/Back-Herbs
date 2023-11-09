@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="emotionStylesheet.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
   <link rel="icon" href="Images/Icons/leaf-icon.png">
-
 </head>
 
 <body>
@@ -130,29 +129,25 @@ In 1936, he published his seminal work "The Twelve Healers and Other Remedies," 
 
 <script>
 
-function displayBach() {
-  var x = document.getElementById("bachFlowerList");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-} 
-</script>
-<script>
-
-  function displayNative() {
-    var x = document.getElementById("nativeFlowerList");
+  function displayBach() {
+    var x = document.getElementById("bachFlowerList");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
       x.style.display = "none";
     }
-  } 
-  </script>
-<!--
-  <script>
-    function translateTest() {
-      document.getElementById("bachFlowerList").style.transform = "translate(150%, 0%)";
+    var y = document.getElementById("nativeFlowerList");
+      y.style.display = "none";
+  }
+    function displayNative() {
+      var x = document.getElementById("nativeFlowerList");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+        var y = document.getElementById("bachFlowerList");
+      y.style.display = "none";
     }
-      </script>-->
+  </script>
+  
