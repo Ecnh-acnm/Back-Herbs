@@ -6,16 +6,15 @@ body {
     background-repeat: no-repeat;
     background-attachment: relative;
 }
-a {
-  color: black;
-  text-decoration: none;
-}
+
 a:hover {
   color: white;
 }
+
 .main {
   margin-bottom: 200px;
 }
+
 /*Styled list items for emotion pages */
 .emotionsListShell {
   list-style-type: none;
@@ -52,12 +51,12 @@ a:hover {
 
 
 .listItem:hover {
-    background: linear-gradient(180deg, #455F41 , rgb(180, 191, 179, 0.5));
-    color: white;
-    border-width: 5px;
-    border-style: solid;
-    border-image: none;
-    border-color:#455F41;
+  background: linear-gradient(180deg, #455F41 , rgb(180, 191, 179, 0.5));
+  color: white;
+  border-width: 5px;
+  border-style: solid;
+  border-image: none;
+  border-color:#455F41;
 }
 
 /* Drop down button styling for navigating to flowers */
@@ -65,7 +64,6 @@ a:hover {
   border: none;
   font-weight: bold;
 }
-
 
 .dropTile {
   position: relative;
@@ -100,27 +98,39 @@ a:hover {
   z-index: 999;
 }
 .toggleBox {
-  width: 59vw;
   list-style-type: none;
+  display: none;
+  left: -100px;
+  transition-property: left;
+  transition-duration: 2s;
 }
+
 ul {
   padding-left: 0px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
-
-.toggleBox li {
+.toggleBoxSeen {
   list-style-type: none;
-  line-height: 3;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 15px;
-  
-  color: white;
+  display: block;
+  left: 0px;
 }
 
+.toggleBoxSeen li {
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.toggleBarCont {
+  display: flex;
+}
 #bachFlowerList {
   text-align: left;
-  display: none;
+  list-style-type: none;
+  line-height: 3;
+  border-radius: 5px;
+  color: white;
 }
 
 #bachFlowerList li {
@@ -129,17 +139,22 @@ ul {
 
 #nativeFlowerList {
   text-align: right;
-  display: none;
+  list-style-type: none;
+  line-height: 3;
+  border-radius: 5px;
+  margin: 15px;
+  color: white;
 }
 #nativeFlowerList li {
   background: linear-gradient(0.25turn,  #fff, #455F41);
 }
 
 .menuBox {
-  margin: 118px;
-  margin-bottom: 15px;
+  margin: 15px;
+  margin-bottom: 0px;
   margin-top: 0px;
 }
+
 @media (max-width: 1200px) {
     /* body styling */
 body {
