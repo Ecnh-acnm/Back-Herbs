@@ -215,12 +215,16 @@ footer > p {
   object-fit: cover;
   background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(Images/Icons/blueIcon.png);
   background-position: center;
+  line-height: 2;
+  font-size: 2rem;
 }
 
 #menu2 {
   object-fit: cover;
   background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(Images/Icons/nativeFlower3.png);
   background-position: center;
+  line-height: 2;
+  font-size: 2rem;
 }
 
 #menu3 {
