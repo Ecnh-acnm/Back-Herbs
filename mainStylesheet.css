@@ -86,7 +86,7 @@ h3 {
   line-height: 1;
 }
 
-/*All square clickable links use this stylying and class */
+/*All square clickable links use this stylying and class NOT ANYMORE now they use option box.*/
 .menuBox {
   width: 290px;
   height: 250px;
@@ -100,6 +100,7 @@ h3 {
   margin-top: 0px;
   letter-spacing: 10.26px;
 }
+
 
 /* Square navigation items below banner */
 .menuBox a {
@@ -316,7 +317,7 @@ footer > p {
     font-style: normal;
     letter-spacing: 5.26px;
     font-size: 1rem;
-    line-height: 1;
+    line-height: 1.5;
   }
   .searchableItem {
     background-color: #F2F0F0;
