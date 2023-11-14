@@ -21,7 +21,6 @@ ul {
 }
 
 .listItem {
-  flex: 1;
   line-height: 4;
   border-radius: 512px;
   width: 150px;
@@ -53,11 +52,12 @@ ul {
 .dropListContent {
   visibility: hidden;
   opacity: 0;
+  display: none;
   position: relative;
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
-  min-width: 122px;
+  width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   margin-top: 8px;
@@ -183,12 +183,14 @@ visibility: hidden;
   background-color: rgba(167, 174, 160, 0.0);
 }
 
-.show {
+.reveal {
+  display: block;
   visibility: visible;
   opacity: 1;
   }     
 
-@media (max-width: 900px) {
+
+@media (max-width: 1050px) {
   .emotionsListShell {
     padding: 0px;
     display: flex;
@@ -202,16 +204,14 @@ visibility: hidden;
     width: 200px;
   }
   .listItem {
-    flex: 1;
     line-height: 4;
     border-radius: 10px;
     width: 200px;
     text-align: center;
   }
   .dropListContent {
-    visibility: hidden;
-    opacity: 0;
-    position: relative;
+    display: none;
+    position: absolute;
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -224,5 +224,10 @@ visibility: hidden;
     visibility: visible;
     opacity: 1;
     height:auto;
-    }   
+    }  
+  .reveal {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  } 
 }

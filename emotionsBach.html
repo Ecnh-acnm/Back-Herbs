@@ -58,7 +58,7 @@
 <div class="mainText">
   <h3>Dividing flowers by emotion:</h3>
 <p class="p-body">We can sort the different emotional spectrums into 8 different categories, listed below.</p>
-
+<div>
   <ul class="emotionsListShell">
     <li onclick="fearShow()" class="listItem"><a class="dropTileButton">Fear</a>
       <div class="dropListContent" id="fearDrop">
@@ -67,8 +67,7 @@
         <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
         <a href="fear-flowers/HTML_RedChestnut.html">Red Chestnut</a>
         <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
-      </div>
-    </li>
+      </div></li>
     <li onclick="angerShow()" class="listItem"><a class="dropTileButton">Anger</a>
       <div class="dropListContent" id="angerDrop">
         <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
@@ -76,8 +75,7 @@
         <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
         <a href="fear-flowers/HTML_RedChestnut.html">Red Chestnut</a>
         <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
-      </div>
-    </li>
+      </div></li>
     <li onclick="sadnessShow()" class="listItem"><a class="dropTileButton">Sadness</a>
       <div class="dropListContent" id="sadnessDrop">
         <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
@@ -85,8 +83,7 @@
         <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
         <a href="fear-flowers/HTML_RedChestnut.html">Red Chestnut</a>
         <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
-      </div>
-    </li>
+      </div></li>
     <li onclick="joyShow()" class="listItem"><a class="dropTileButton">Joy</a>
       <div class="dropListContent" id="joyDrop">
         <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
@@ -94,8 +91,9 @@
         <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
         <a href="fear-flowers/HTML_RedChestnut.html">Red Chestnut</a>
         <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
-      </div>
-    </li>
+      </div></li>
+  </ul>
+  <ul class="emotionsListShell">
     <li onclick="interestShow()" class="listItem"><a class="dropTileButton">Interest</a>
       <div class="dropListContent" id="interestDrop">
         <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
@@ -133,6 +131,7 @@
       </div>
     </li>
   </ul>
+</div>
     <p class="p-body">
       <h3>How do flowers and emotions connect?</h3>
       The history of Bach flowers is a tale of one man's journey to discover a natural and holistic approach to healing emotional and psychological imbalances. Dr. Edward Bach, a British physician, developed this unique system of flower remedies in the early 20th century.
@@ -178,48 +177,48 @@ In 1936, he published his seminal work "The Twelve Healers and Other Remedies," 
     </script>
 <script>
   function fearShow() {
-  document.getElementById("fearDrop").classList.toggle("show");
+  document.getElementById("fearDrop").classList.toggle("reveal");
 }
 
 function angerShow() {
-  document.getElementById("angerDrop").classList.toggle("show");
+  document.getElementById("angerDrop").classList.toggle("reveal");
 }
 
 function sadnessShow() {
-  document.getElementById("sadnessDrop").classList.toggle("show");
+  document.getElementById("sadnessDrop").classList.toggle("reveal");
 }
 
 function joyShow() {
-  document.getElementById("joyDrop").classList.toggle("show");
+  document.getElementById("joyDrop").classList.toggle("reveal");
 }
 
 function interestShow() {
-  document.getElementById("interestDrop").classList.toggle("show");
+  document.getElementById("interestDrop").classList.toggle("reveal");
 }
 
 function surpriseShow() {
-  document.getElementById("surpriseDrop").classList.toggle("show");
+  document.getElementById("surpriseDrop").classList.toggle("reveal");
 }
 
 function disgustShow() {
-  document.getElementById("disgustDrop").classList.toggle("show");
+  document.getElementById("disgustDrop").classList.toggle("reveal");
 }
 
 function shameShow() {
-  document.getElementById("shameDrop").classList.toggle("show");
+  document.getElementById("shameDrop").classList.toggle("reveal");
 }
 
 
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.listItem')) {
+  if (!event.target.matches('.dropTileButton')) {
     var dropdowns = document.getElementsByClassName("dropListContent");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.toggle('show');
+      if (openDropdown.classList.contains('reveal')) {
+        openDropdown.classList.remove('reveal');
       }
     }
   }
