@@ -60,8 +60,8 @@
 <p class="p-body">We can sort the different emotional spectrums into 8 different categories, listed below.</p>
 
   <ul class="emotionsListShell">
-    <li class="listItem"><a class="dropTileButton" href="#" target="_blank">Fear</a>
-      <div class="dropListContent">
+    <li onclick="fearShow()" class="listItem"><a class="dropTileButton">Fear</a>
+      <div class="dropListContent" id="fearDrop">
         <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
         <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
         <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
@@ -69,8 +69,8 @@
         <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
       </div>
     </li>
-    <li class="listItem"><a class="dropTileButton" href="#" target="_blank">Anger</a>
-      <div class="dropListContent">
+    <li onclick="angerShow()" class="listItem"><a class="dropTileButton">Anger</a>
+      <div class="dropListContent" id="angerDrop">
         <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
         <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
         <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
@@ -78,8 +78,8 @@
         <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
       </div>
     </li>
-    <li class="listItem"><a class="dropTileButton" href="#" target="_blank">Sadness</a>
-      <div class="dropListContent">
+    <li onclick="sadnessShow()" class="listItem"><a class="dropTileButton">Sadness</a>
+      <div class="dropListContent" id="sadnessDrop">
         <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
         <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
         <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
@@ -87,8 +87,8 @@
         <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
       </div>
     </li>
-    <li class="listItem"><a class="dropTileButton" href="#" target="_blank">Joy</a>
-      <div class="dropListContent">
+    <li onclick="joyShow()" class="listItem"><a class="dropTileButton">Joy</a>
+      <div class="dropListContent" id="joyDrop">
         <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
         <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
         <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
@@ -96,8 +96,8 @@
         <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
       </div>
     </li>
-    <li class="listItem"><a class="dropTileButton" href="#" target="_blank">Interest</a>
-      <div class="dropListContent">
+    <li onclick="interestShow()" class="listItem"><a class="dropTileButton">Interest</a>
+      <div class="dropListContent" id="interestDrop">
         <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
         <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
         <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
@@ -105,8 +105,8 @@
         <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
       </div>
     </li>
-    <li class="listItem"><a class="dropTileButton" href="#" target="_blank">Surprise</a>
-      <div class="dropListContent">
+    <li onclick="surpriseShow()" class="listItem"><a class="dropTileButton">Surprise</a>
+      <div class="dropListContent" id="surpriseDrop">
         <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
         <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
         <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
@@ -114,8 +114,8 @@
         <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
       </div>
     </li>
-    <li class="listItem"><a class="dropTileButton" href="#" target="_blank">Disgust</a>
-      <div class="dropListContent">
+    <li onclick="disgustShow()" class="listItem"><a class="dropTileButton">Disgust</a>
+      <div class="dropListContent" id="disgustDrop">
         <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
         <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
         <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
@@ -123,8 +123,8 @@
         <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
       </div>
     </li>
-    <li class="listItem"><a class="dropTileButton" href="#" target="_blank">Shame</a>
-      <div class="dropListContent">
+    <li onclick="shameShow()" class="listItem"><a class="dropTileButton">Shame</a>
+      <div class="dropListContent" id="shameDrop">
         <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
         <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
         <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
@@ -164,15 +164,64 @@ In 1936, he published his seminal work "The Twelve Healers and Other Remedies," 
     </body>
     </html>
     
-    <script
-        src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-        crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('.toggle').click(function(){
-                    $('.toggle').toggleClass('active')
-                    $('.sidebar').toggleClass('active')
-                })
+<script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('.sidebar').toggleClass('active')
             })
-        </script>
+        })
+    </script>
+<script>
+  function fearShow() {
+  document.getElementById("fearDrop").classList.toggle("show");
+}
+
+function angerShow() {
+  document.getElementById("angerDrop").classList.toggle("show");
+}
+
+function sadnessShow() {
+  document.getElementById("sadnessDrop").classList.toggle("show");
+}
+
+function joyShow() {
+  document.getElementById("joyDrop").classList.toggle("show");
+}
+
+function interestShow() {
+  document.getElementById("interestDrop").classList.toggle("show");
+}
+
+function surpriseShow() {
+  document.getElementById("surpriseDrop").classList.toggle("show");
+}
+
+function disgustShow() {
+  document.getElementById("disgustDrop").classList.toggle("show");
+}
+
+function shameShow() {
+  document.getElementById("shameDrop").classList.toggle("show");
+}
+
+
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.listItem')) {
+    var dropdowns = document.getElementsByClassName("dropListContent");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.toggle('show');
+      }
+    }
+  }
+}
+</script>

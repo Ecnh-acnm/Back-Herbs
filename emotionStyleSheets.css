@@ -3,8 +3,8 @@
 }
 ul {
   padding-left: 0px;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 /*Styled list items for Bach and Native emotion pages */
@@ -13,48 +13,36 @@ ul {
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
-  justify-content:  space-between;
-  margin-bottom: 80px;
+  justify-content: space-around;
+  margin-bottom: 35px;
+  border: 2px solid #476143;
+  border-radius: 50px;
+  margin-top: 35px;
 }
 
 .listItem {
   flex: 1;
-  color: black;
-  line-height: 3;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px;
+  line-height: 4;
+  border-radius: 512px;
   width: 150px;
   height: 70px;
   text-align: center;
-  align-content: center;
-  border-width: 5px;
-  border-style: solid;
-  border-image: 
-  linear-gradient(
-    to bottom, 
-    #455F41, 
-    rgba(0, 0, 0, 0)
-  ) 1 100%;
   position: relative;
   display: inline-block;
-  /*border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px) 60;*/
+  cursor: pointer;
 }
 
 
 .listItem:hover {
-  background: linear-gradient(180deg, #455F41 , rgb(180, 191, 179, 0.5));
+  background: #46604240;
   color: white;
-  border-width: 5px;
-  border-style: solid;
-  border-image: none;
-  border-color:#455F41;
 }
 
 /* Drop down button styling for navigating to flowers */
 .dropTileButton {
   border: none;
-  font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
 .dropTile {
@@ -63,20 +51,26 @@ ul {
 }
 
 .dropListContent {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   position: relative;
-  background-color: #f1f1f1;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
   min-width: 122px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  margin-top: 33px;
+  margin-top: 8px;
+  display: inline-block;
+  transition: opacity 600ms, visibility 600ms; 
 }
 
 .dropListContent a {
   color: black;
-  padding: 12px 20px;
+  padding: 5px;
   text-decoration: none;
   display: flex;
+  line-height: 2;
 }
 
 .dropListContent a:hover {
@@ -85,8 +79,7 @@ ul {
   display: flex;
 }
 
-.listItem:hover .dropListContent {
-  display: inline-block;    
+.listItem:hover .dropListContent {   
   z-index: 999;
 }
 
@@ -189,4 +182,47 @@ visibility: hidden;
 .singlelinkDISP > a:hover {
   background-color: rgba(167, 174, 160, 0.0);
 }
-  
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  }     
+
+@media (max-width: 900px) {
+  .emotionsListShell {
+    padding: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-bottom: 35px;
+    border: 2px solid #476143;
+    border-radius: 10px;
+    margin-top: 35px;
+    flex-direction: column;
+    width: 200px;
+  }
+  .listItem {
+    flex: 1;
+    line-height: 4;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+  }
+  .dropListContent {
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    height: 0px;
+  }
+  .show {
+    visibility: visible;
+    opacity: 1;
+    height:auto;
+    }   
+}

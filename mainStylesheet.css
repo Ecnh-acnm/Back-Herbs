@@ -201,13 +201,18 @@ footer > p {
   justify-content: space-evenly;
   padding: 20px;
 }
+.flexBox {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /*Styled paragraphs in central column on generic pages */
 .mainText {
     padding: 10px;
     line-height: 1.5;
-    width: 80%;
+    width: 60%;
     margin: 30px;
+    margin-top: 0px
 }
 
 /*IDs for multiple different pages to style menubox objects with specific images. will be moved to secondary specific stylesheets*/
