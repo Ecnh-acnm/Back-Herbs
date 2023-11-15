@@ -55,9 +55,8 @@ ul {
   display: none;
   position: relative;
   background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
-  width: 150px;
+  width: inherit;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   margin-top: 8px;
@@ -189,36 +188,62 @@ visibility: hidden;
   opacity: 1;
   }     
 
-
+.mobileDiv {
+  border: 0px solid #476143;
+  border-radius: 45px;
+  padding: 0px;
+  margin: 0px;
+  display: static;
+}
 @media (max-width: 1050px) {
+  .mobileDiv {
+    border: 2px solid #476143;
+    border-radius: 4px;
+    padding: 0px;
+    margin: 0px;
+  }
   .emotionsListShell {
     padding: 0px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    margin-bottom: 35px;
-    border: 2px solid #476143;
-    border-radius: 10px;
-    margin-top: 35px;
     flex-direction: column;
-    width: 200px;
+    width: inherit;
+    margin: 0px;
+    border-width:0px;
   }
   .listItem {
     line-height: 4;
-    border-radius: 10px;
-    width: 200px;
+    border-radius: 2px;
+    width: auto;
     text-align: center;
+    height: 70px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    display: static;
   }
   .dropListContent {
     display: none;
-    position: absolute;
-    background: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: relative;
     z-index: 1;
     height: 0px;
+    width:auto;
+    min-width:auto;
+    top: -2px;
+  }
+  .dropListContent a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    display: flex;
+    line-height: 2;
+    text-align: center;
+    background-color: #46604240;
+    backdrop-filter: blur(5px);
+  }
+  .dropListContent a:hover {
+    background-color: #4761434f;
   }
   .show {
     visibility: visible;
