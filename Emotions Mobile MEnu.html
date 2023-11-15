@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html charset="utf-8">
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>Emotions Home v2</title>
+  <link rel="stylesheet" href="mainStylesheet.css">
+  <link rel="stylesheet" href="emotionStyleSheets.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <link rel="icon" href="Images/Icons/leaf-icon.png">
+<style>
+    .menuBUttton {
+        display: none;
+    }
+    #mobileToggleBach {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+    #mobileToggleNative {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .buttonHeadingMobile {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+</style>
+</head>
+
+<body>
+  <!--From toggle to sidebar (inclusive) is the mobile menu. Triggers at 900 pixels in width but may adjust.-->
+  <div class="toggle"></div>
+  <div class="sidebar">
+    <ul class="hiddenMenu">
+      <li class="navitem"><a href="homePage.html" target="_blank" data-text="Home" class="navMobileLink">Home</a></li>
+      <li class="navitem"><a href="fullFlowerList.html" data-text="Flower list" class="navMobileLink">Flower list</a></li>
+      <li class="navitem"><a href="bachAndNativeFlowers.html" data-text="Flower types" class="navMobileLink">Flower types</a></li>
+      <li class="navitem"><a href="emotionsHome.html" data-text="Emotions" class="navMobileLink">Emotions</a></li>
+    </ul>
+  </div>
+  <!--onkeyup="myFunction()" this was in the input bar to access the JS code to search by id-->
+  <!--Menu bar for navigation, from menubar div to the input div. Turns off at 900 pixels and under-->
+<div class="menubar">
+<div class="dropdown">
+  <a class="dropbtn"href="homePage.html">Home</a>
+</div>
+<div class="dropdown">
+  <a class="dropbtn">Flower list</a>
+  <div class="dropdown-content">
+    <a href="bachFlowerList.html">Bach Flowers</a>
+    <a href="nativeFlowerList.html">Native Flowers</a>
+    <a href="fullFlowerList.html">Full Flower List</a>
+  </div>
+</div>
+    <div class="dropdown">
+      <a class="dropbtn">Emotions</a>
+      <div class="dropdown-content">
+        <a href="emotionsHome.html">Emotions Homepage</a>
+        <a href="emotionsBach.html">Bach Emotions</a>
+        <a href="emotionsNative.html">Native Emotions</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn"href="bachFlowers.html">Bach</a>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn"href="nativeFlowers.html">Native</a>
+    </div>
+</div>
+    <div class="splashHeading">
+      <h2>Flower Essence Therapy</h2>
+      <p class="p-body"><h3>Click on a flower type to navigate to a specific emotion.</h3>
+    </div>
+<div class="main">
+  <div class="toggleBarCont">
+    <p id="mobileToggleBach" class="buttonHeadingMobile">Bach Flowers</p>
+    <p id="mobileToggleNative" class="buttonHeadingMobile">Native Flowers</p>
+<div class="dropdownFlowwers">
+
+    <button onclick="bachFunction()" class="menuBUttton" id="menu1">Bach Flowers</button>
+    <div id="bachDropdown" class="dropdownFlowwers-content">
+      <div class="singleLink"><div class="listHoverItem" href="#">Anger Flowers</div>
+          <div class="listDisplay">
+            <div class="singlelinkDISP">HellHelloHelloo</div>
+            <div class="singlelinkDISP">Hello</div>
+            <div class="singlelinkDISP">Hello</div>
+          </div>
+        </div>
+      <div class="singleLink"><div class="listHoverItem" href="#">Sadness Flowers</div>
+      <div class="listDisplay">
+        <div class="singlelinkDISP">HellHelloHelloo</div>
+        <div class="singlelinkDISP">Hello</div>
+        <div class="singlelinkDISP">Hello</div>
+      </div>
+    </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Fear Flowers</div>
+    <div class="listDisplay">
+      <div class="singlelinkDISP"><a href="fear-flowers/HTML_Aspen.html">Aspen</a></div>
+      <div class="singlelinkDISP"><a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a></div>
+      <div class="singlelinkDISP"><a href="fear-flowers/HTML_Minulus.html">Minulus</a></div>
+      <div class="singlelinkDISP"><a href="fear-flowers/HTML_RedChestnut.html">Red Chestnut</a></div>
+      <div class="singlelinkDISP"><a href="fear-flowers/HTML_RockRose.html">Rock Rose</a></div>
+    </div>
+  </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Joy Flowers</div>
+    <div class="listDisplay">
+      <div class="singlelinkDISP">HellHelloHelloo</div>
+      <div class="singlelinkDISP">Hello</div>
+      <div class="singlelinkDISP">Hello</div>
+    </div>
+    </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Interest Flowers</div>
+    <div class="listDisplay">
+      <div class="singlelinkDISP">HellHelloHelloo</div>
+      <div class="singlelinkDISP">Hello</div>
+      <div class="singlelinkDISP">Hello</div>
+    </div>
+    </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Surprise Flowers</div>
+    <div class="listDisplay">
+      <div class="singlelinkDISP">HellHelloHelloo</div>
+      <div class="singlelinkDISP">Hello</div>
+      <div class="singlelinkDISP">Hello</div>
+    </div>
+    </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Disgust Flowers</div>
+    <div class="listDisplay">
+      <div class="singlelinkDISP">HellHelloHelloo</div>
+      <div class="singlelinkDISP">Hello</div>
+      <div class="singlelinkDISP">Hello</div>
+    </div>
+    </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Shame Flowers</div>
+    <div class="listDisplay">
+      <div class="singlelinkDISP">HellHelloHelloo</div>
+      <div class="singlelinkDISP">Hello</div>
+      <div class="singlelinkDISP">Hello</div>
+    </div>
+    </div>
+      </div>
+  </div>
+
+  <div class="dropdownFlowwers">
+    <button onclick="nativeFunction()" class="menuBUttton" id="menu2">Native Flowers</button>
+    <div id="nativeDropdown" class="dropdownFlowwers-content">
+      <div class="singleLink"><div class="listHoverItem" href="#">Anger Flowers</div>
+          <div class="listDisplay">
+            <div class="singlelinkDISP">HellHelloHelloo</div>
+            <div class="singlelinkDISP">Hello</div>
+            <div class="singlelinkDISP">Hello</div>
+          </div>
+        </div>
+      <div class="singleLink"><div class="listHoverItem" href="#">Sadness Flowers</div>
+      <div class="listDisplay">
+        <div class="singlelinkDISP">HellHelloHelloo</div>
+        <div class="singlelinkDISP">Hello</div>
+        <div class="singlelinkDISP">Hello</div>
+      </div>
+    </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Fear Flowers</div>
+    <div class="listDisplay">
+      <div class="singlelinkDISP">HellHelloHelloo</div>
+      <div class="singlelinkDISP">Hello</div>
+      <div class="singlelinkDISP">Hello</div>
+    </div>
+  </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Joy Flowers</div>
+    <div class="listDisplay">
+      <div class="singlelinkDISP">HellHelloHelloo</div>
+      <div class="singlelinkDISP">Hello</div>
+      <div class="singlelinkDISP">Hello</div>
+    </div>
+    </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Interest Flowers</div>
+    <div class="listDisplay">
+      <div class="singlelinkDISP">HellHelloHelloo</div>
+      <div class="singlelinkDISP">Hello</div>
+      <div class="singlelinkDISP">Hello</div>
+    </div>
+    </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Surprise Flowers</div>
+    <div class="listDisplay">
+      <div class="singlelinkDISP">HellHelloHelloo</div>
+      <div class="singlelinkDISP">Hello</div>
+      <div class="singlelinkDISP">Hello</div>
+    </div>
+    </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Disgust Flowers</div>
+    <div class="listDisplay">
+      <div class="singlelinkDISP">HellHelloHelloo</div>
+      <div class="singlelinkDISP">Hello</div>
+      <div class="singlelinkDISP">Hello</div>
+    </div>
+    </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Shame Flowers</div>
+    <div class="listDisplay">
+      <div class="singlelinkDISP">HellHelloHelloo</div>
+      <div class="singlelinkDISP">Hello</div>
+      <div class="singlelinkDISP">Hello</div>
+    </div>
+    </div>
+      </div>
+  </div>
+</div>
+<div class="mainText">
+    <p class="p-body">
+      <h3>How do Flower Essences Work?</h3>
+      Traditionally, flower essences are described as the non-physical (etheric or subtle) energy of the plant imbibed (captured or embodied) by the medium of water. The remedy's subtle energy resonates with the subtle energy of a person and catalyses a shift in conscious awareness. This shift in awareness facilitates the process of change.
+
+There are no biological determinations via research and scientific methods to date.
+<br>
+You can also explain flower essence therapy by looking at references to the multi-dimensional bodies. That we are not just a physical body but an energetic being that will relate to the world and others through energetic systems. </p>
+
+<p class="p-body">
+  <h3>Understanding Emotions</h3>
+  Before learning about flower remedies, it's important to understand the spectrum of human emotions. There are eight primary emotions. You are born with these emotions wired into your brain. That wiring causes your body to react in certain ways and for you to have certain urges when the emotion arises.
+
+  Here is a list of primary emotions:
+<ol>
+  <li>Anger - Fury, outrage, wrath, irritability, hostility, resentment, and violence.</li>
+  <li>Sadness - Grief, sorrow, gloom, melancholy, despair, loneliness, and depression.</li>
+  <li>Fear - Anxiety, apprehension, nervousness, dead, fright, and panic.</li>
+  <li>Joy - Enjoyment, happiness, relief, bliss, delight, pride, thrill, and ecstasy.</li>
+  <li>Interest - Acceptance, friendliness, trust, kindness, affection, love, and devotion.</li>
+  <li>Surprise - Shock, astonishment, amazement, astound, and wonder.</li>
+  <li>Disgust - Contempt, disdain, scorn, aversion, distaste, and revulsion.</li>
+  <li>Shame - Guilt, embarrassment, chagrin, remorse, regret, and contrition.</li>
+</ol>All other emotions are made up by combining these basic 8 emotions.</p>
+</div>
+</div>
+
+<footer>
+    <p>Endeavour College of Natural Health © 2023</p>
+</footer>
+</body>
+</html>
+    
+<script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('.sidebar').toggleClass('active')
+            })
+        })
+    </script>
+<!--<script>
+  function displayBach() {
+    var x = document.getElementById("bachFlowerList");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+    var y = document.getElementById("nativeFlowerList");
+      y.style.display = "none";
+  }
+    function displayNative() {
+      var x = document.getElementById("nativeFlowerList");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+        var y = document.getElementById("bachFlowerList");
+      y.style.display = "none";
+    }
+  </script>
+-->
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function bachFunction() {
+      document.getElementById("bachDropdown").classList.toggle("show");
+    }
+    function nativeFunction() {
+      document.getElementById("nativeDropdown").classList.toggle("show");
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.menuBUttton')) {
+        var dropdowns = document.getElementsByClassName("dropdownFlowwers-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>

@@ -255,4 +255,13 @@ visibility: hidden;
     opacity: 1;
     display: block;
   } 
+
+  .toggleBarCont {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+  }
+  .menuBUttton {
+    margin-bottom: 15px;
+  }
 }
