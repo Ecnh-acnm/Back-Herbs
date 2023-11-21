@@ -112,14 +112,13 @@ a {
     margin: 0px;
     background-color:#F6F6F6;
     padding: 15px;
-    width: 100%;
+    width: auto;
     height: auto;
     border-radius: 3px;
     margin-left: 0px;
     margin-top: 40px;
     position: relative;
     z-index: -1;
-
   }
 
   .ImageAsset {
@@ -235,6 +234,7 @@ a {
   }
   .menubar {
     position: relative;
+    width: auto;
   }
   footer {
     width: 100%;
