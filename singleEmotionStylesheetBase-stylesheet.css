@@ -6,6 +6,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: relative;
 }
+footer {
+  position: absolute;
+}
 
 .splashHeading {
     padding-top: 70px;
@@ -221,5 +224,8 @@ body {
     background-position: center, top;
     line-height: 2;
     background-repeat: no-repeat;
+  }
+  .optionBox {
+    width:200px;
   }
 }

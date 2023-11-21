@@ -269,7 +269,13 @@ footer > p {
   scrollbar-color: #455F41, lightgrey;
   scrollbar-width: thin;
   }
-
+  .mainText {
+    padding: 10px;
+    line-height: 1.5;
+    width: 80%;
+    margin: 0px;
+    margin-top: 0px
+}
   footer {
     width: 100%;
     background-color: rgb(180, 191, 179, 0.5);
