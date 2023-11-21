@@ -273,7 +273,7 @@ footer > p {
   footer {
     width: 100%;
     background-color: rgb(180, 191, 179, 0.5);
-    position: relative;
+    position: fixed;
     bottom: 0px;
     text-align: center;
     height:auto;
@@ -339,6 +339,7 @@ footer > p {
     letter-spacing: 5.26px;
     font-size: 1rem;
     line-height: 1.5;
+    margin-left: calc(100%-45%)
   }
   .searchableItem {
     background-color: #F2F0F0;
