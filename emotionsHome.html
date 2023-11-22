@@ -19,7 +19,7 @@
       <li class="navitem"><a href="homePage.html" target="_blank" data-text="Home" class="navMobileLink">Home</a></li>
       <li class="navitem"><a href="fullFlowerList.html" data-text="Flower list" class="navMobileLink">Flower list</a></li>
       <li class="navitem"><a href="bachAndNativeFlowers.html" data-text="Flower types" class="navMobileLink">Flower types</a></li>
-      <li class="navitem"><a href="Emotions Mobile MEnu.html" data-text="Emotions" class="navMobileLink">Emotions</a></li>
+      <li class="navitem"><a href="emotionsHome.html" data-text="Emotions" class="navMobileLink">Emotions</a></li>
       <li class="navitem"><a href="bachFlowers.html" data-text="Bach Flowers" class="navMobileLink">Bach Flowers</a></li>
       <li class="navitem"><a href="nativeFlowers.html" data-text="Native Flowers" class="navMobileLink">Native Flowers</a></li>
     </ul>
@@ -57,7 +57,7 @@
       <h2>Flower Essence Therapy</h2>
       <p class="p-body"><h3>Click on a flower type to navigate to a specific emotion.</h3>
     </div>
-<div class="main">
+<div class="main" id="desktopMain">
   <div class="toggleBarCont">
   
 <div class="dropdownFlowwers">
@@ -212,7 +212,93 @@ You can also explain flower essence therapy by looking at references to the mult
 </ol>All other emotions are made up by combining these basic 8 emotions.</p>
 </div>
 </div>
+<div class="main" id="mobileMain">
+  <div class="switchPosition">
+  <label class="switch">
+    <!-- onclick="toggleFunctionMobile()"-->
+    <input type="checkbox" id="toggleButton" checked>
+    <span class="slider round"></span>
+  </label></div>
 
+<div class="toggleBarCont">
+  <div id="mobileToggleBach" class="mobileShow">
+  <div class="dropdownFlowwers">
+  <button  class="buttonHeadingMobile">Bach Flowers</button>
+    <!-- <button onclick="bachFunction()" class="menuBUttton" id="menu1">Bach Flowers</button>-->
+    <div id="bachDropdown" class="dropdownFlowwers-content">
+      <div class="singleLink">
+        <div class="listHoverItem" href="#">Anger Flowers</div>
+        </div>
+      <div class="singleLink"><div class="listHoverItem" href="#">Sadness Flowers</div>
+    </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Fear Flowers</div>
+  </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Joy Flowers</div>
+    </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Interest Flowers</div>
+    </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Surprise Flowers</div>
+    </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Disgust Flowers</div>
+    </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Shame Flowers</div>
+    </div>
+      </div>
+  </div>
+</div>
+
+<div id="mobileToggleNative" class="mobileHidden">
+<div class="dropdownFlowwers">
+  <button  class="buttonHeadingMobile">Native Flowers</button>
+  <!--<button onclick="nativeFunction()" class="menuBUttton" id="menu2">Native Flowers</button>-->
+  <div id="nativeDropdown" class="dropdownFlowwers-content">
+    <div class="singleLink"><div class="listHoverItem" href="#">Anger Flowers</div>
+      </div>
+    <div class="singleLink"><div class="listHoverItem" href="#">Sadness Flowers</div>
+  </div>
+  <div class="singleLink"><div class="listHoverItem" href="#">Fear Flowers</div>
+</div>
+  <div class="singleLink"><div class="listHoverItem" href="#">Joy Flowers</div>
+  </div>
+  <div class="singleLink"><div class="listHoverItem" href="#">Interest Flowers</div>
+  </div>
+  <div class="singleLink"><div class="listHoverItem" href="#">Surprise Flowers</div>
+  </div>
+  <div class="singleLink"><div class="listHoverItem" href="#">Disgust Flowers</div>
+  </div>
+  <div class="singleLink" >
+    <div class="listHoverItem" href="#">Shame Flowers</div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="mainText">
+    <p class="p-body">
+      <h3>How do Flower Essences Work?</h3>
+      Traditionally, flower essences are described as the non-physical (etheric or subtle) energy of the plant imbibed (captured or embodied) by the medium of water. The remedy's subtle energy resonates with the subtle energy of a person and catalyses a shift in conscious awareness. This shift in awareness facilitates the process of change.
+
+There are no biological determinations via research and scientific methods to date.
+<br>
+You can also explain flower essence therapy by looking at references to the multi-dimensional bodies. That we are not just a physical body but an energetic being that will relate to the world and others through energetic systems. </p>
+
+<p class="p-body">
+  <h3>Understanding Emotions</h3>
+  Before learning about flower remedies, it's important to understand the spectrum of human emotions. There are eight primary emotions. You are born with these emotions wired into your brain. That wiring causes your body to react in certain ways and for you to have certain urges when the emotion arises.
+
+  Here is a list of primary emotions:
+<ol>
+  <li>Anger - Fury, outrage, wrath, irritability, hostility, resentment, and violence.</li>
+  <li>Sadness - Grief, sorrow, gloom, melancholy, despair, loneliness, and depression.</li>
+  <li>Fear - Anxiety, apprehension, nervousness, dead, fright, and panic.</li>
+  <li>Joy - Enjoyment, happiness, relief, bliss, delight, pride, thrill, and ecstasy.</li>
+  <li>Interest - Acceptance, friendliness, trust, kindness, affection, love, and devotion.</li>
+  <li>Surprise - Shock, astonishment, amazement, astound, and wonder.</li>
+  <li>Disgust - Contempt, disdain, scorn, aversion, distaste, and revulsion.</li>
+  <li>Shame - Guilt, embarrassment, chagrin, remorse, regret, and contrition.</li>
+</ol>All other emotions are made up by combining these basic 8 emotions.</p>
+</div>
+</div>
 <footer>
     <p>Endeavour College of Natural Health © 2023</p>
 </footer>
@@ -277,4 +363,23 @@ window.onclick = function(event) {
         }
       }
     }
+
+    
+document.getElementById('toggleButton').addEventListener('click', function() {
+  var firstDiv = document.getElementById('mobileToggleBach');
+  var secondDiv = document.getElementById('mobileToggleNative');
+
+  if (firstDiv.classList.contains('mobileShow')) {
+    firstDiv.classList.remove('mobileShow');
+    firstDiv.classList.add('mobileHidden');
+    secondDiv.classList.remove('mobileHidden');
+    secondDiv.classList.add('mobileShow');
+  } else {
+    secondDiv.classList.remove('mobileShow');
+    secondDiv.classList.add('mobileHidden');
+    firstDiv.classList.remove('mobileHidden');
+    firstDiv.classList.add('mobileShow');
+  }
+});
+
 </script>
