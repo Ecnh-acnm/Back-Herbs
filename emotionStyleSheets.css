@@ -213,7 +213,7 @@ visibility: hidden;
     display: none;
   }
   #mobileMain {
-    display: block;
+    display: flex;
   }
   .mobileDiv {
     border: 2px solid #476143;
@@ -294,12 +294,14 @@ visibility: hidden;
   }
   
   .buttonHeadingMobile {
-    text-align: center;
     font-size: 1.5rem;
     color: black;
-    border-width:0px;
+    border-width: 0px;
     background-color: white;
-    margin: 15px;
+    margin: 27px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 5.26px;
   }
   
   .listDisplay {
@@ -368,7 +370,8 @@ visibility: hidden;
   .switchPosition {
     width: 100%;
     position: relative;
-    left: 38%;
+    display: flex;
+    justify-content: center;
   }
   
   .mobileShow {
@@ -384,12 +387,16 @@ visibility: hidden;
     opacity: 0;
     transition: opacity 600ms, visibility 600ms, 0.4s;
   }
+  .dropdownFlowwers {
+    position: relative;
+    display: block;
+  }
   
   .dropdownFlowwers-content {
     visibility: visible;
     opacity: 1;
     left:auto;
-    width: 337px;
+    width: auto;
     position: relative;
   }
   .singlelinkDISP {
