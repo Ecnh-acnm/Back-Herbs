@@ -17,10 +17,21 @@
     border-radius: 4px;
     color: white;
     margin: 15px;
-    align-content: center;
+    font-size: 1.5rem;
+    transition: all 250ms;
+}
+.videoLink:hover {
+    /*background-color: #fff0;
+    color: black;*/
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 li {
     padding: 5px;
+}
+.mainText {
+    display: flex;
+  flex-direction: column;
 }
 </style>
 </head>
@@ -142,13 +153,13 @@ li {
         </ul>
         <br>     
         <h3>Making the Remedy</h3>
-        <p>For Bach remedies, Bach suggested Dosage Bottle (30ml dropper bottle). Contents include:</p>
-        •	Two drops of the/each Stock Bottle remedy (you have either made up or bought as a practitioner)
-        •	Flower essence menstruum containing
-        •	2/3 water (spring/mineral)
-        •	1/3 preservative (e.g. brandy) 
-        The patient takes four drops a minimum of four times/day.
-        The amount of flower essence drops used will differ from set to set. Please take note of the recommended amounts unless you are using an intuitive method of arriving at a dosage amount.
+        <p>For Bach remedies, Bach suggested Dosage Bottle (30ml dropper bottle).<br> Contents include:</p>
+        <ul class="equipmentList">
+        <li>Two drops of the/each Stock Bottle remedy (you have either made up or bought as a practitioner)</li>
+        <li>Flower essence menstruum containing:<ul><li>2/3 water (spring/mineral)</li><li>1/3 preservative (e.g. brandy) </li></ul></li>
+    </ul>
+    <p>The patient takes four drops a minimum of four times/day.<br>
+        The amount of flower essence drops used will differ from set to set. Please take note of the recommended amounts unless you are using an intuitive method of arriving at a dosage amount.</p> 
         <br><br>  
         Essence Kit Maker Suggestions 
         
