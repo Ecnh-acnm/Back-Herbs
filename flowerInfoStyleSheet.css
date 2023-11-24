@@ -11,7 +11,7 @@ p, li {
 /* Image Asset on flower info pages */
 .ImageAsset {
   position: relative;
-  border: 20px solid white;
+  border: 10px solid white;
   border-radius: 10px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   width: 17vw;
