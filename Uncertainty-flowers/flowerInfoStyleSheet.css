@@ -4,7 +4,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+.videoLink {
+  font-size: 1rem;
+}
 /* Image Asset on flower info pages */
 .ImageAsset {
   position: relative;
@@ -21,7 +23,7 @@ body {
   box-sizing: border-box;
   top: 100px;
   right: 0px;
-  width: calc(100% - 650px);
+  width: calc(100% - 40%);
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -39,7 +41,8 @@ body {
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 500px;
+  min-width: 500px;
+  max-width:650px;
   height: 100vh;
   padding: 70px 70px 0 40px;
 }
@@ -57,7 +60,7 @@ body {
 
 /* individual elements of info on the text side on the left */
 .infoBox {
-  margin: 0px;
+  margin: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -112,14 +115,15 @@ a {
     margin: 0px;
     background-color:#F6F6F6;
     padding: 15px;
-    width: 100%;
+    width: auto;
+    min-width: none;
+    max-width: none;
     height: auto;
     border-radius: 3px;
     margin-left: 0px;
     margin-top: 40px;
     position: relative;
     z-index: -1;
-
   }
 
   .ImageAsset {
@@ -235,6 +239,7 @@ a {
   }
   .menubar {
     position: relative;
+    width: auto;
   }
   footer {
     width: 100%;

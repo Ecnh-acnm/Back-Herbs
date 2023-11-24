@@ -95,7 +95,9 @@ a {
 }
 
 
-
+.videoLink {
+  font-size: 1rem;
+}
 @media (max-width: 1200px) {
   body {
   height: 100vh;
@@ -114,6 +116,8 @@ a {
     background-color:#F6F6F6;
     padding: 15px;
     width: auto;
+    min-width: none;
+    max-width: none;
     height: auto;
     border-radius: 3px;
     margin-left: 0px;

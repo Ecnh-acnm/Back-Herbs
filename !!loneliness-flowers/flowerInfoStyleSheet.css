@@ -1,0 +1,269 @@
+body {
+  background-image: url(Images/flower-bg-2.png);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.videoLink {
+  font-size: 1rem;
+}
+/* Image Asset on flower info pages */
+.ImageAsset {
+  position: relative;
+  border: 20px solid white;
+  border-radius: 10px;
+  margin-left: 4%;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  width: 20vw;
+  margin-bottom: 30px;
+}
+/* Container for images on flower info pages */
+.imageBar {
+  position: absolute;
+  box-sizing: border-box;
+  top: 100px;
+  right: 0px;
+  width: calc(100% - 40%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row;
+}
+/* Attribution for info on flower pages */
+.credit {
+  font-size: smaller;
+  width: 100%;
+  margin: 10px;
+}
+/* text clumn on the left hand side */
+.herbColumn {
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  min-width: 500px;
+  max-width:650px;
+  height: 100vh;
+  padding: 70px 70px 0 40px;
+}
+
+/*quote styling */
+.herbQuote {
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/*div to contain a heading floated and a p element inline */
+.infoBox h3, p:nth-of-type(1) { display: inline !important;}
+
+/* individual elements of info on the text side on the left */
+.infoBox {
+  margin: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 2.5em;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 0px;
+}
+
+footer {
+  width: 100%;
+}
+
+/* link to extra resources on bottom left */
+.videoLink {
+  width: auto;
+  background-color: #455F41;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-left: 39px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 1200px) {
+  body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif; 
+  scroll-behavior: smooth;
+  scrollbar-color: #455F41, lightgrey;
+  scrollbar-width: thin;
+  background-image: none;
+  }
+  
+  .herbColumn {
+    margin: 0px;
+    background-color:#F6F6F6;
+    padding: 15px;
+    width: auto;
+    min-width: none;
+    max-width: none;
+    height: auto;
+    border-radius: 3px;
+    margin-left: 0px;
+    margin-top: 40px;
+    position: relative;
+    z-index: -1;
+  }
+
+  .ImageAsset {
+    position: static;
+    overflow: hidden;
+    width: 80%;
+    border: 20px solid white;
+    border-radius: 10px;
+  }
+  .imageBar {
+    width: 100%;
+    position: static;
+    background-position: center;
+    display: flex;
+    margin-left: 0px;
+    box-sizing: content-box;
+    top: 0%;
+    right: 0%;
+    margin-bottom: 40px;
+  }
+/* Menu Overlay Mobile */
+  .toggle {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+    z-index: 10;
+    padding: 0 20px;
+    border-radius: 5px;
+  }
+  .toggle:before {
+    display: block;
+    content: 'Menu';
+    color: #fff;
+    line-height: 60px;
+    text-transform: capitalize;
+  }
+  .toggle.active:before {
+    display: block;
+    content: 'close';
+    color: #fff;
+    line-height: 60px;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #455F41cc;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition: 0.5s;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+  .hiddenMenu {
+    position: relative;
+    padding: 0px;
+  }
+  .hiddenMenu .navitem {
+    list-style: none;
+    text-align: center;
+  }
+  .hiddenMenu .navitem .navMobileLink {
+    text-decoration: none;
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+
+  .hiddenMenu .navitem .navMobileLink:hover {
+    color: #F6F6F6;
+  }
+
+  .hiddenMenu .navitem .navMobileLink:before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    font-size: 6em;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    font-family: initial;
+  }
+
+  .hiddenMenu .navitem .navMobileLink:hover:before {
+      opacity: 0.1;
+      top: 50%;
+  }
+  .menubar a {
+    display: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .menubar {
+    position: relative;
+    width: auto;
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+  }
+  /* link to extra resources on bottom left */
+.videoLink {
+  width: 70%;
+  background-color: #455F41;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 0px;
+}
+/* individual elements of info on the text side on the left */
+.infoBox {
+  margin: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 90vw;
+}
+.credit {
+  width: 90vw;
+}
+}
+

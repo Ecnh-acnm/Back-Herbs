@@ -177,7 +177,7 @@ h3 {
 footer {
   width: 100%;
   background-color: rgb(180, 191, 179, 0.5);
-  /*position: fixed;*/
+  position: fixed;
   bottom: 0px;
   text-align: center;
   height:auto;

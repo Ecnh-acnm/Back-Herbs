@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html charset="utf-8">
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>Water Violet</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <link rel="stylesheet" href="mainStylesheet.css">
+  <link rel="stylesheet" href="flowerInfoStyleSheet.css">
+  <link rel="icon" href="Images/favicon.png">
+</head>
+
+<body>
+  <!--From toggle to sidebar (inclusive) is the mobile menu. Triggers at 900 pixels in width but may adjust.-->
+  <div class="toggle"></div>
+  <div class="sidebar">
+    <ul class="hiddenMenu">
+      <li class="navitem"><a href="Back-Herbs/homePage.html" target="_blank" data-text="Home" class="navMobileLink">Home</a></li>
+      <li class="navitem"><a href="fullFlowerList.html" data-text="Flower list" class="navMobileLink">Flower list</a></li>
+      <li class="navitem"><a href="bachAndNativeFlowers.html" data-text="Flower types" class="navMobileLink">Flower types</a></li>
+      <li class="navitem"><a href="emotionsHome.html" data-text="Emotions" class="navMobileLink">Emotions</a></li>
+      <li class="navitem"><a href="bachFlowers.html" data-text="Bach Flowers" class="navMobileLink">Bach Flowers</a></li>
+      <li class="navitem"><a href="nativeFlowers.html" data-text="Native Flowers" class="navMobileLink">Native Flowers</a></li>
+    </ul>
+  </div>
+  <!--onkeyup="myFunction()" this was in the input bar to access the JS code to search by id-->
+  <!--Menu bar for navigation, from menubar div to the input div. Turns off at 900 pixels and under-->
+<div class="menubar">
+<div class="dropdown">
+  <a class="dropbtn"href="homePage.html">Home</a>
+</div>
+<div class="dropdown">
+  <a class="dropbtn">Flower list</a>
+  <div class="dropdown-content">
+    <a href="bachFlowerList.html">Bach Flowers</a>
+    <a href="nativeFlowerList.html">Native Flowers</a>
+    <a href="fullFlowerList.html">Full Flower List</a>
+  </div>
+</div>
+    <div class="dropdown">
+      <a class="dropbtn">Emotions</a>
+      <div class="dropdown-content">
+        <a href="emotionsHome.html">Emotions Homepage</a>
+        <a href="emotionsBach.html">Bach Emotions</a>
+        <a href="emotionsNative.html">Native Emotions</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn"href="bachFlowers.html">Bach</a>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn"href="nativeFlowers.html">Native</a>
+    </div>
+    <div class="dropdown">
+        <a class="dropbtn"href="Bottling_and_Dosing_Guide.html">Preparation</a>
+      </div>
+</div>
+
+
+<div class="herbColumn">
+  <h2><strong>Water Violet</strong></h2>
+    <h3><em>Hottonia palustris</em></h3>
+    <div class="infoBox"><h3>Keywords</h3><p>: Pride, Aloof.</p></div>
+    <div class="infoBox"><h3>Negative Indications</h3>
+      <p>: Disdain or condescending towards others. Withdrawn and cold, cut-off, lonely, not friendly or forthcoming.</p></div>
+    <div class="infoBox"><h3>Positive Outcomes</h3><p>: Comfortable connection with others; capable, understanding and empathetic. Talent in service of others, feels closer to them. </p></div>
+    <div class="infoBox"><h3>Clinical Applications and Uses</h3>
+      <br>
+        <ul>
+        <li>Calm, serene and dignified, but can appear proud, disdainful and condescending. Tendency to withdraw when tired or with too much external distraction; anti-social and cold.</li>
+        <li>Difficulty in opening up to others, can retreat into a calm facade. Water violet types are proud and protective of their delicate, highly spiritual nature.</li>
+        <li>Will experience longing to merge with others, but fearful of impact on their soft heart.</li>
+      </ul>
+    </p>
+    <p class="credit">(Bach Center, 2007; Scheffer, 1988; Wells, 2002)</p>
+  </div>     
+</div>
+
+<div class="imageBar">
+  <img class="ImageAsset"
+    src="Images/water-violet-1.png"
+    alt="Water Violet">
+  <img class="ImageAsset"
+    src="Images/water-violet-1.png"
+    alt="Water Violet"> 
+    <p class="videoLink">
+      <a href="https://youtu.be/WP9zyWG5rBg" target="_blank">Click here for a video about Water Violets.</a>  <br>
+      <a href="https://www.bachflowerlearning.com/the-language-of-plants/water-violet/" target="_blank">Click here for more information about Water Violets.</a>   
+</div>
+<footer>
+  <p>Endeavour College of Natural Health © 2023</p>
+</footer>
+      
+</div>
+
+
+  </body>
+
+  <script
+	src="https://code.jquery.com/jquery-3.7.1.js"
+	integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+	crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('.sidebar').toggleClass('active')
+            })
+        })
+    </script>
+		
+		<script>// Function to pause the video when the page loads
+    function pauseVideo() {
+      // Get the iframe element  
+      var iframe = document.getElementById("videoIframe");
+        // Check if the iframe exists  
+        if (iframe) {
+        // Get the content window of the iframe    
+        var iframeContentWindow = iframe.contentWindow;
+            // Check if the content window is accessible    
+            if (iframeContentWindow) {
+          // Pause the video within the iframe      
+          iframeContentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        }
+      }
+    }
+    
+    // Attach the pauseVideo function to the window's onload event
+    window.onload = pauseVideo;
+    </script>
