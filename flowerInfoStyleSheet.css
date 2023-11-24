@@ -4,6 +4,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+p, li {
+  font-size: 0.8rem;
+}
 
 /* Image Asset on flower info pages */
 .ImageAsset {
@@ -11,8 +14,8 @@ body {
   border: 20px solid white;
   border-radius: 10px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-  width: 20vw;
-  margin: 30px;
+  width: 17vw;
+  margin: 10px;
 }
 /* Container for images on flower info pages */
 .imageBar {
@@ -65,7 +68,8 @@ body {
 h2 {
   margin-top: 15px;
   margin-bottom: 15px;
-  font-size: 2.5em;
+  font-size: 1.5em;
+  letter-spacing: 7px;
 }
 
 ul {
@@ -95,7 +99,8 @@ a {
 }
 
 h3 {
-  line-height: 1.5;
+  line-height: normal;
+  font-size: 1rem;
   letter-spacing: 5px;
 }
 .videoLink {
