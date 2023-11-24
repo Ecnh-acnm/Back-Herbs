@@ -94,7 +94,10 @@ a {
   text-decoration: none;
 }
 
-
+h3 {
+  line-height: 1.5;
+  letter-spacing: 5px;
+}
 .videoLink {
   font-size: 1rem;
 }

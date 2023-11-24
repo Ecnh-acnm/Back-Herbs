@@ -7,6 +7,10 @@ body {
 .videoLink {
   font-size: 1rem;
 }
+h3 {
+  line-height: 1.5;
+  letter-spacing: 5px;
+}
 /* Image Asset on flower info pages */
 .ImageAsset {
   position: relative;

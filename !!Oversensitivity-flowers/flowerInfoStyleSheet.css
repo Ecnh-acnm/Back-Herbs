@@ -97,7 +97,10 @@ a {
 }
 
 
-
+h3 {
+  line-height: 1.5;
+  letter-spacing: 5px;
+}
 @media (max-width: 1200px) {
   body {
   height: 100vh;
