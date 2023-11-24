@@ -116,7 +116,7 @@ p, li. h2, h3 {
   margin: 30px;
 }
 /* was 1200px! */
-@media (max-width: 900px) {
+@media (max-width: 850px) {
   body {
   height: 100vh;
   width: auto;
