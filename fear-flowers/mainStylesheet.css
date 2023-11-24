@@ -60,22 +60,32 @@ body {
   padding-bottom: 70px;
   text-align: center;
   /* background-color: #B4BFB3;*/
-  background-image: url(Images/Bgs/pexels-karolina-grabowska-4198139.jpg);
+  background-image: linear-gradient(0turn, rgb(255, 255, 255), rgb(255 255 255 / 0%)), url(Images/Splash/daisies.png);
   background-position: center, top;
-  line-height: 2.6;
+  line-height: 2;
+  background-repeat: no-repeat;
 }
 /*The h2 element is used on top of the splash heading on all generic pages */
 h2 {
   color: #000;
   font-family: Inter, sans-serif;
-  font-size: 58px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 141.5%; /* 96.22px */
-  letter-spacing: 13.26px;
+  letter-spacing: 16.26px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+h3 {
+  color: #000;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  letter-spacing: 10.26px;
+  font-size: 1.5rem;
+  line-height: 2;
 }
 
-/*All square clickable links use this stylying and class */
+/*All square clickable links use this stylying and class NOT ANYMORE now they use option box.*/
 .menuBox {
   width: 290px;
   height: 250px;
@@ -86,15 +96,17 @@ h2 {
   align-items: center;
   justify-content: center;
   display: flex;
+  margin-top: 0px;
+  letter-spacing: 10.26px;
 }
+
 
 /* Square navigation items below banner */
 .menuBox a {
-  color:white;
-  font-size: 2em;
+  color:black;
+  font-size: 2rem;
   text-decoration: none;
 }
-
 
 /* Menu top bar */  
 .menubar {
@@ -165,7 +177,7 @@ h2 {
 footer {
   width: 100%;
   background-color: rgb(180, 191, 179, 0.5);
-  position: fixed;
+  /*position: fixed;*/
   bottom: 0px;
   text-align: center;
   height:auto;
@@ -175,7 +187,9 @@ footer {
   align-content: center;
   z-index: 999;
 }
-
+footer > p {
+  margin: 0px;
+}
 /*General work area */
 .main {
   display: flex;
@@ -186,30 +200,41 @@ footer {
   justify-content: space-evenly;
   padding: 20px;
 }
+.flexBox {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /*Styled paragraphs in central column on generic pages */
 .mainText {
     padding: 10px;
     line-height: 1.5;
-    position: center;
-    width: 80%;
+    width: 60%;
+    margin: 30px;
+    margin-top: 0px
 }
-
 
 /*IDs for multiple different pages to style menubox objects with specific images. will be moved to secondary specific stylesheets*/
 #menu1 {
   object-fit: cover;
-  background-image: url(https://images.pexels.com/photos/18552106/pexels-photo-18552106/free-photo-of-blooming-red-garden-nasturtium-flower.jpeg?auto=compress&cs=tinysrgb&w=1200);
+  background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(Images/Icons/blueIcon.png);
+  background-position: center;
+  line-height: 2;
+  font-size: 2rem;
 }
 
 #menu2 {
   object-fit: cover;
-  background-image: url(https://images.pexels.com/photos/18500135/pexels-photo-18500135/free-photo-of-close-up-of-a-dahlia-flower.jpeg?auto=compress&cs=tinysrgb&w=1200);
+  background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(Images/Icons/nativeFlower3.png);
+  background-position: center;
+  line-height: 2;
+  font-size: 2rem;
 }
 
 #menu3 {
   object-fit: cover;
-  background-image: url(https://images.pexels.com/photos/18514150/pexels-photo-18514150/free-photo-of-green-plant-with-flower.jpeg?auto=compress&cs=tinysrgb&w=1200);
+  background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(Images/Icons/yellowIcon.png);
+  background-position: center;
 }
 #rockRose {
   object-fit: cover;
@@ -230,4 +255,255 @@ footer {
 #redChestnut {
   object-fit: cover;
   background-image: url(fear-flowers/icons/redchestnuttile.png);
+}
+.endeavourLogo {
+  display: none;
+}
+
+/* On dosing page */
+.videoLink {
+  cursor: pointer;
+  border-width: 0px;
+  background-color: #455f41;
+  padding: 20px;
+  border-radius: 4px;
+  color: white;
+  margin: 15px;
+  font-size: 1.5rem;
+  transition: all 250ms;
+}
+.videoLink:hover {
+  /*background-color: #fff0;
+  color: black;*/
+transform: translateY(-10px);
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+@media (max-width: 850px) {
+  body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif; 
+  scroll-behavior: smooth;
+  scrollbar-color: #455F41, lightgrey;
+  scrollbar-width: thin;
+  }
+  .mainText {
+    padding: 10px;
+    line-height: 1.5;
+    width: 80%;
+    margin: 0px;
+    margin-top: 0px
+}
+  footer {
+    width: 100%;
+    background-color: rgb(180, 191, 179, 0.5);
+    /*position: fixed;*/
+    bottom: 0px;
+    text-align: center;
+    height:auto;
+    color: white;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    align-content: center;
+    z-index: 999;
+  }
+  .splashHeading {
+    padding-top: 70px;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    /* background-color: #B4BFB3;*/
+    background-image: linear-gradient(0turn, rgb(255, 255, 255), rgb(255 255 255 / 0%)), url(Images/Splash/daisies.png);
+    background-position: top;
+    line-height: 1.6;
+    background-repeat: no-repeat;
+  }
+  .leftHeading {
+    width: 100vw;
+    min-width: 290px;
+    color: #000;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.74px;
+    position: relative;
+    display: inline-block;
+    top: 48%;
+    left: 0%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+  
+  .leftHeading > button {
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 0px;
+    color: white;
+    background-color: #455F41;
+    cursor: pointer;
+  }
+
+   h2 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing:5.26px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  h3 {
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    letter-spacing: 5.26px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: calc(100%-45%)
+  }
+  .searchableItem {
+    background-color: #F2F0F0;
+    margin: 20px;
+    border-radius: 15px;
+    width: 75vw;
+    align-items: center;
+    height: 60px;
+    list-style: none;
+    padding: 15px;
+    
+  }
+  .herbDetails {
+    margin: 30px;
+    background-color:#F6F6F6;
+    flex-grow: 0;
+    padding: 15px;
+    width: 45vw;
+    height: auto;
+    position: static;
+    border-radius: 3px;
+    margin-left: 0px;
+    flex-grow: 2;
+  }
+
+  .ImageAsset {
+    overflow: hidden;
+    height: auto;
+    width: 40vw;
+    border: 20px solid white;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 50px;
+    padding: 0px;
+    background-color: white;
+    flex-grow: 1;
+  }
+  .itemBox {
+    padding-top: 35px;
+  }
+    /* Menu Overlay Mobile */
+  .toggle {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+    z-index: 10;
+    padding: 0 20px;
+    border-radius: 5px;
+  }
+  .toggle:before {
+    display: block;
+    content: 'Menu';
+    color: #fff;
+    line-height: 60px;
+    text-transform: capitalize;
+  }
+  .toggle.active:before {
+    display: block;
+    content: 'close';
+    color: #fff;
+    line-height: 60px;
+    z-index: 999;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #455F41cc;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition: 0.5s;
+    z-index: 9;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+  .hiddenMenu {
+    position: relative;
+    padding: 0px;
+  }
+  .hiddenMenu .navitem {
+    list-style: none;
+    text-align: center;
+  }
+  .hiddenMenu .navitem .navMobileLink {
+      text-decoration: none;
+      padding: 5px;
+      text-transform: uppercase;
+      color: white;
+      font-size: 2em;
+      letter-spacing: 1px;
+      font-weight: bold;
+      transition: 0.5s;
+  }
+
+  .hiddenMenu .navitem .navMobileLink:hover {
+      color: #F6F6F6;
+  }
+
+  .hiddenMenu .navitem .navMobileLink:before{
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.5s;
+      font-size: 6em;
+      opacity: 0;
+      pointer-events: none;
+      z-index: -1;
+      font-family: initial;
+  }
+
+  .hiddenMenu .navitem .navMobileLink:hover:before {
+      opacity: 0.1;
+      top: 50%;
+  }
+  .menubar a {
+    display: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .endeavourLogo {
+    width: 20vw;
+    margin: 35px;
+    display: block;
+  }
 }

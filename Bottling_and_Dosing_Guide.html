@@ -9,29 +9,39 @@
   <link rel="icon" href="Images/Icons/leaf-icon.png">
 <style>
 
-.videoLink {
-    cursor: pointer;
-    border-width: 0px;
-    background-color: #455f41;
-    padding: 20px;
-    border-radius: 4px;
-    color: white;
-    margin: 15px;
-    font-size: 1.5rem;
-    transition: all 250ms;
-}
-.videoLink:hover {
-    /*background-color: #fff0;
-    color: black;*/
-  transform: translateY(-10px);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
+
 li {
     padding: 5px;
 }
 .mainText {
     display: flex;
   flex-direction: column;
+  overflow:clip;
+  margin-bottom: 50px;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.dosageImage {
+    float:right;
+    margin: 65px;
+}
+
+@media (max-width: 850px) {
+    .dosageImage {
+        float:none;
+    margin: 0px;
+    width: 100%
+    }
 }
 </style>
 </head>
@@ -47,6 +57,7 @@ li {
       <li class="navitem"><a href="emotionsHome.html" data-text="Emotions" class="navMobileLink">Emotions</a></li>
       <li class="navitem"><a href="bachFlowers.html" data-text="Bach Flowers" class="navMobileLink">Bach Flowers</a></li>
       <li class="navitem"><a href="nativeFlowers.html" data-text="Native Flowers" class="navMobileLink">Native Flowers</a></li>
+      <li class="navitem"><a href="Bottling_and_Dosing_Guide.html" data-text="Native Flowers" class="navMobileLink">Preparation Guide</a></li>
     </ul>
   </div>
   <!--onkeyup="myFunction()" this was in the input bar to access the JS code to search by id-->
@@ -77,6 +88,9 @@ li {
     <div class="dropdown">
       <a class="dropbtn"href="nativeFlowers.html">Native</a>
     </div>
+    <div class="dropdown">
+        <a class="dropbtn"href="Bottling_and_Dosing_Guide.html">Preparation</a>
+      </div>
 </div>
     <div class="splashHeading">
       <h2>Preparation Guide</h2>
@@ -84,6 +98,7 @@ li {
     </div>
 <div class="main">
     <div class="mainText">
+
         <h3>Preparation Method</h3>
         <p>Begin by watching this video with Annie Meredith from HeartRadiance Australia Essences on how to make essences and the things to consider when making essences.</p>
         <button class="videoLink" href="https://youtu.be/SP9CuFPN5u0">Click here to watch the video</button>
@@ -92,8 +107,9 @@ li {
         <h3>The sun Method and the boiling Method.</h3>
         Most of the more delicate flowers are prepared using the sun method. This involves floating the flower heads in pure water for three hours, in direct sunlight.
         Woodier plants, and those that bloom when the sun is weak, are generally prepared by the boiling method, for example, by boiling the flowering parts of the plant for half an hour in pure water.
-        <br><br>
-        <h3>Sun Preparation Method</h3>
+       <br><br>
+        <div class="container reveal">
+            <h3>Sun Preparation Method</h3>
         <p>To make the mother tincture, you will need:</p>
         <ul class="equipmentList">
             <li>a plain glass bowl</li>
@@ -105,7 +121,8 @@ li {
         <p>
         All these implements must be vibrationally cleansed before use. To do this, they need to be soaked in a salt-soaked solution for at least ten minutes, then rinsed off in clear water.
         The Mother Tincture is sourced from nature, which is then filtered down to the dosage bottle for administration to the person.</p>
-        (White, 1999)
+        (White, 1999)</div>
+        <div class="container reveal">
         <h3>Boiling Preparation Method</h3>
         <p>Bach used the boiling preparation method to prepare the mother tincture from 18 essences from trees, bushes and plants, most of which flower in the early part of the year.
         These are picked, boiled in a saucepan and left in the pan to cool outdoors.</p>
@@ -118,8 +135,9 @@ li {
             <li>Allow to cool, then remove plant matter and filter water from the pot</li>
             <li>Transfer to 500ml bottles that are ½ filled with brandy</li>
             <li>Label the Mother Tincture bottle appropriately</li>
-        </ul>
+        </ul></div>
         <br><br>
+        <div class="container reveal">
         <h3>Making a Stock Bottle</h3>
         <p>To make the practitioner strength Stock Bottle that you are able to buy from essence makers, you would take drops 
         from your Mother Tincture and add this to a flower essence menstruum of water and a preservative (commonly brandy).
@@ -132,12 +150,14 @@ li {
             <li> Base — 30 ml straight brandy</li>
             <li>Add two drops of mother tincture</li>
         </ul>
-       
+       </div>
+       <div class="container reveal">
         <h3>Australian Bush Flower Essences (ABFE) and HeartRadiance Australia Flower Essences:</h3>
         <ul class="equipmentList">
             <li>Base — 1/3 purified spring water to 2/3 brandy</li>
             <li>Add seven drops of mother tincture</li>
         </ul>
+        <img class="dosageImage" src="Images/Droppers/brown-dropper.png" alt="Brown dosage bottle">
         <br>
         <h3>Making a Dosage Bottle</h3>
         <p>From the stock bottle, you then make the dosage bottle.</p>
@@ -150,8 +170,9 @@ li {
         <ul class="equipmentList">
             <li>Base: 2/3 purified spring water and 1/3 brandy</li>
             <li>Add two drops from the stock tincture</li>
-        </ul>
-        <br>     
+        </ul></div>
+        <br>
+        <div class="container reveal">
         <h3>Making the Remedy</h3>
         <p>For Bach remedies, Bach suggested Dosage Bottle (30ml dropper bottle).<br> Contents include:</p>
         <ul class="equipmentList">
@@ -160,25 +181,31 @@ li {
     </ul>
     <p>The patient takes four drops a minimum of four times/day.<br>
         The amount of flower essence drops used will differ from set to set. Please take note of the recommended amounts unless you are using an intuitive method of arriving at a dosage amount.</p> 
-        <br><br>  
-        Essence Kit Maker Suggestions 
-        
-        Essence makers will give suggested instructions for taking the remedies. Bach, for example, is four drops of the dosage bottle placed under the tongue four to five times daily.
-        This would be written out on a script/label clearly "four drops placed under your tongue four times daily".
-        Dosing
-        There are options for dosing that also need to be considered. For example, would you like to dose the remedy as per the essence maker instructions or in another way?
-        Consider the client — could the remedy dosage work in with the script you are creating? For example:
-        What additional lifestyle considerations are you co-prescribing?
-        Are you prescribing liquid herbs that you could add them to? Are you prescribing increased watch intake that you could add them to?
-        Are you prescribing a tea ritual they could be added to?
-        Would you like them to take the remedy internally or externally? For example, are you making up a healing balm or aura spray that you might add them to?
-        Consider the essence maker suggestions here because if you chose to deviate from this you will need to clinically justify your reasons.
-        Flower essences are vibrational remedies so may be taken internally (drops under the tongue, sipped slowly from a glass of water or in a water bottle) or externally (applied to the lips, wrists, temples when they cannot be given by the mouth; adding them to bathwater; lotions and salves; body splash; Aura and room sprays).
-        It is important to get into the habit of taking a remedy regularly to reap its full benefits. Taking the essence on rising and on retiring is best, as your mind is usually relaxed and receptive to the essences. It may be a good idea to keep your chosen remedy beside your bed so you remember to take it as you wake up and before you go to sleep.
-        Consider if informing and involving the client throughout the administering and prescribing process will help them become aware of their own stress patterns and enable them to take back responsibility for their health and happiness.
-        Be constantly mindful of the client’s beliefs and philosophies.
-        
+        <br><br>
+    </div>
+    <div class="container reveal">
+        <h3>Essence Kit Maker Suggestions </h3>
+        <p>Essence makers will give suggested instructions for taking the remedies. Bach, for example, is four drops of the dosage bottle placed under the tongue four to five times daily. This would be written out on a script/label clearly "four drops placed under your tongue four times daily".</p><br><br>
         </div>
+        <div class="container reveal">
+        <h3>Dosing</h3>
+        <img class="dosageImage" src="Images/Droppers/yellow-dropper.png" alt="Yellow dosage bottle">
+        <p>There are options for dosing that also need to be considered. For example, would you like to dose the remedy as per the essence maker instructions or in another way?
+        Consider the client — could the remedy dosage work in with the script you are creating? For example:</p>
+        <ul class="equipmentList">
+            <li>What additional lifestyle considerations are you co-prescribing?</li>
+            <li>Are you prescribing liquid herbs that you could add them to? Are you prescribing increased watch intake that you could add them to?</li>
+            <li>Are you prescribing a tea ritual they could be added to?</li>
+            <li>Would you like them to take the remedy internally or externally? For example, are you making up a healing balm or aura spray that you might add them to?</li>
+        </ul>
+        <p>Consider the essence maker suggestions here because if you chose to deviate from this you will need to clinically justify your reasons.
+            Flower essences are vibrational remedies so may be taken internally (drops under the tongue, sipped slowly from a glass of water or in a water bottle) or externally (applied to the lips, wrists, temples when they cannot be given by the mouth; adding them to bathwater; lotions and salves; body splash; Aura and room sprays).
+            </p><p>It is important to get into the habit of taking a remedy regularly to reap its full benefits. Taking the essence on rising and on retiring is best, as your mind is usually relaxed and receptive to the essences. It may be a good idea to keep your chosen remedy beside your bed so you remember to take it as you wake up and before you go to sleep.
+            Consider if informing and involving the client throughout the administering and prescribing process will help them become aware of their own stress patterns and enable them to take back responsibility for their health and happiness.
+            Be constantly mindful of the client’s beliefs and philosophies.</p>
+        </div>
+        </div>
+        <img class="endeavourLogo" src="Images/Icons/logo-green.png" alt="EndeavourLogo">
 </div>
 
 <footer>
@@ -198,4 +225,24 @@ li {
                 $('.sidebar').toggleClass('active')
             })
         })
+
+
+        function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
     </script>

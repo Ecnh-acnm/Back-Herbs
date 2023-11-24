@@ -6,7 +6,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
+footer {
+    position: fixed;
+}
 /*Generic heading splash on non welcome pages */
 .splashHeading {
     background-image: none;
