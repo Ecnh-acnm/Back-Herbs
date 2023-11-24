@@ -5,7 +5,7 @@ body {
   background-repeat: no-repeat;
 }
 p, li {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 /* Image Asset on flower info pages */
@@ -26,7 +26,7 @@ p, li {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  left: 850px;
+  left: 650px;
 }
 /* Attribution for info on flower pages */
 .credit {
@@ -40,10 +40,10 @@ p, li {
   position: fixed;
   top: 0px;
   left: 0px;
-  min-width: 500px;
-  max-width:650px;
+  max-width: 550px;
+  /*max-width:650px;*/
   height: 100vh;
-  padding: 70px 70px 0 40px;
+  padding: 70px 40px 0 40px;
 }
 
 /*quote styling */
@@ -106,7 +106,17 @@ h3 {
 .videoLink {
   font-size: 1rem;
 }
-@media (max-width: 1200px) {
+/*intended edits for extra large media query
+
+p, li. h2, h3 {
+  font-size: auto;
+  line-height: 1.5;
+}
+.imageAsset {
+  margin: 30px;
+}
+/* was 1200px! */
+@media (max-width: 900px) {
   body {
   height: 100vh;
   width: auto;
