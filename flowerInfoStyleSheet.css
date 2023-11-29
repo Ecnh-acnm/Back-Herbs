@@ -91,6 +91,7 @@ footer {
   border-radius: 15px;
   margin-top: 30px;
   margin-left: 39px;
+  max-height: 25px;
 }
 
 a {
@@ -290,3 +291,17 @@ p, li. h2, h3 {
 }
 }
 
+@media (min-width: 1650px) {
+  p, li {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size:2.5rem;
+  }
+  .ImageAsset {
+    margin: 50px;
+  }
+}

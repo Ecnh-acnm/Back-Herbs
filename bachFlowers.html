@@ -7,6 +7,43 @@
   <link rel="stylesheet" href="mainStylesheet.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
   <link rel="icon" href="Images/leaf-icon.png">
+  <style>
+
+
+    li {
+        padding: 5px;
+    }
+    .mainText {
+        display: flex;
+      flex-direction: column;
+      overflow:clip;
+      margin-bottom: 50px;
+    }
+    
+    .reveal{
+      position: relative;
+      transform: translateY(150px);
+      opacity: 0;
+      transition: 1s all ease;
+    }
+    
+    .reveal.active{
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .dosageImage {
+        float:right;
+        margin: 65px;
+    }
+    
+    @media (max-width: 850px) {
+        .dosageImage {
+            float:none;
+        margin: 0px;
+        width: 100%
+        }
+    }
+    </style>
 </head>
 
 <body>
@@ -58,26 +95,67 @@
     <div class="splashHeading">
       <h2>Bach flowers</h2>
     </div>
-<div class="main">
-<div class="mainText">
-    <p class="p-body">
-      The history of Bach flowers is a tale of one man's journey to discover a natural and holistic approach to healing emotional and psychological imbalances. Dr. Edward Bach, a British physician, developed this unique system of flower remedies in the early 20th century.
-Dr. Bach's journey began in the 1930s when he was already an accomplished physician and homeopath. However, he grew disillusioned with traditional medicine's emphasis on physical symptoms and disease. He believed that emotional and mental states played a crucial role in the overall well-being of a person. Seeking a more natural and gentle form of healing, he turned his attention to nature.
-Over several years, Dr. Bach explored the countryside of Wales and the English countryside, collecting and studying various plants and flowers. He identified 38 flowers, trees, and bushes with distinct properties that could address specific emotional and psychological states. These included remedies like Mimulus for fear of known things, Aspen for vague and unknown fears, and Rock Rose for extreme terror and panic.
-Dr. Bach developed a simple and gentle method of preparation, known as the "sun method" or "solarization." In this process, the essence of a flower is infused into spring water by placing the blooms in sunlight. This captures the flower's vibrational energy, leaving no chemical residue.
-He believed that these essences could help balance emotional and mental disharmony, thereby alleviating physical illnesses that he saw as stemming from unresolved emotional issues. Bach referred to these as "negative emotional states."
-Dr. Bach's system of flower remedies was groundbreaking at the time, as it addressed the root causes of emotional and mental suffering rather than just the symptoms. He believed that by harmonizing the emotional state, the body would have a better chance to heal itself.
-In 1936, he published his seminal work "The Twelve Healers and Other Remedies," introducing the world to his flower remedies. His system gained recognition and popularity over time, and it's still widely used today. Bach flower remedies are known for their simplicity, safety, and non-invasive nature. They're commonly used as complementary therapies to help manage stress, anxiety, depression, and a range of emotional challenges, promoting emotional well-being and balance, and supporting the holistic approach to health that Dr. Bach envisioned.</p>
-    </div>
-<div class="flexBox">
-<div class="menuBox" id="menu1">
-    <a href="emotionsBach.html" target="_blank">Flowers by Emotion</a>
-  </div>
-  <div class="menuBox" id="menu3">
-    <a href="bachFlowerList.html" target="_blank">Search for flowers</a>
-  </div>
-
+    <div class="main">
+      <div class="mainText">
+          <h3>Who Was Edward Bach?</h3>
+          <p>Edward Bach, originally pronounced 'Bache', was born in 1886 in Birmingham, England. 
+            At the age of 20, he studied medicine and then moved into medical practise and research 
+            with the department of bacteriology and immunology. He also studied homoeopathy & became 
+            interested in matching the bacteria he was researching with emotional states which lead to his 
+            creation of bacterial nosodes. He continued to develop his own thoughts around the effects of the
+             mind on physical illness, particularly personality types and how to address these in practice.
+              After this, he moved into the use of plants and eventually only flowers as a way of addressing 
+            the flaws in personality types that he believed began and worsened the progress of disease.</p>
+         <br><br>
+          <div class="container reveal">
+          <p>Developing his own style of creating remedies, he eventually made the 33 Bach flower remedies used by many today. He died with cancer in 1936, aged 50.</p>
 </div>
+          <br><br>
+          <div class="container reveal">
+          <h3>Health, disease and healing.</h3>
+          <p>Bach wrote a great deal on what he thought about health and disease, and how healing occurred. 
+            His writings are freely available online. In synopsis though, he was a vitalist and 
+            saw the flower essences as holding subtle vibrational energies, or the vital force, that 
+            realigned emotional patterns of dysfunction. When the essences enhanced the personality
+             people were born with, to align with their higher self, that realigned emotional patterns
+              of dysfunction. When the essences enhanced the personality people were born with, to 
+              align with their higher self, they experienced harmony, peace of mind and freely expressed joy. 
+            The vital force then was free to help resolve physical disease.</p>
+         </div>
+
+         <div class="container reveal">
+          <h3>Self-prescription</h3>
+          <p>Bach did not want people to detract from the flower essences with complicated theories. He burnt a lot of his theories on how he believed they worked for that reason. To allow people to self-prescribe, he grouped them into common presenting emotional states that you will learn such as fear, uncertainty, and despair. </p>
+
+          </div>
+          <br>
+          <div class="container reveal">
+          <h3>Dosages Instructions</h3>
+          <p>As with any essence set that you buy, there is a standard dosage that is suggested. 
+            You have instructions of how to make an essence from scratch, however if like many practitioners,
+             you prefer to buy the stock kit, you have instructions of how to make an essence from scratch,
+              however if like many practitioners, you prefer to buy the stock kit, you can make up a Bach dosage 
+              bottle for a client simply by adding two drops of each of the stock remedy strength that you wish
+               to use into a 30 ml dropper bottle. Then top up with the flower essence menstruum, such as a 
+               combination of spring water and brandy, but you can use any preservative that you would like.
+                Once you're done, pop a label on that with instructions for the client of how to use it. 
+                You will then instruct the client to take four drops under their tongue a minimum four times per day. 
+                <img class="dosageImage" src="Images/Droppers/brown-dropper.png" alt="Brown dosage bottle"></p>
+      </div>
+      <div class="flexBox">
+        <div class="menuBox" id="menu1">
+            <a href="emotionsBach.html" target="_blank">Flowers by Emotion</a>
+          </div>
+          <div class="menuBox" id="menu3">
+            <a href="bachFlowerList.html" target="_blank">Search for flowers</a>
+          </div>
+        
+        </div>
+          </div>
+          <img class="endeavourLogo" src="Images/Icons/logo-green.png" alt="EndeavourLogo">
+
+        </div>
+
 
     <footer>
         <p>Endeavour College of Natural Health © 2023</p>
@@ -85,15 +163,36 @@ In 1936, he published his seminal work "The Twelve Healers and Other Remedies," 
     </body>
     </html>
     
+   
     <script
-        src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-        crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('.toggle').click(function(){
-                    $('.toggle').toggleClass('active')
-                    $('.sidebar').toggleClass('active')
-                })
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('.sidebar').toggleClass('active')
             })
-        </script>
+        })
+
+
+        function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+    </script>
