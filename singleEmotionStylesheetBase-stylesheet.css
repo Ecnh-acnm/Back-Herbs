@@ -6,10 +6,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: relative;
 }
-footer {
-  position: absolute;
-}
-
 .splashHeading {
     padding-top: 70px;
     padding-right: 70px;

@@ -91,7 +91,7 @@ footer {
   border-radius: 15px;
   margin-top: 30px;
   margin-left: 39px;
-  max-height: 25px;
+
 }
 
 a {
@@ -303,5 +303,8 @@ p, li. h2, h3 {
   }
   .ImageAsset {
     margin: 50px;
+  }
+  .videoLink {
+    max-height: 25px;
   }
 }
