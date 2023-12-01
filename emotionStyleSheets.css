@@ -9,26 +9,31 @@ ul {
 
 /*Styled list items for Bach and Native emotion pages */
 .emotionsListShell {
-  list-style-type: none;
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 35px;
-  border: 2px solid #476143;
-  border-radius: 50px;
   margin-top: 35px;
+  border: none;
 }
 
 .listItem {
-  line-height: 4;
-  border-radius: 512px;
-  width: 150px;
-  height: 70px;
+  margin: 15px;
+  min-width: 200px;
+  max-height: 115px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.713);
   text-align: center;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  letter-spacing: 5.26px;
+  object-fit: cover;
+  background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(Images/Icons/yellowIcon.png);
+  background-position: center;
+  flex-grow: 1;
+  line-height: 3;
 }
 
 
@@ -208,7 +213,7 @@ visibility: hidden;
 #mobileMain {
   display: none;
 }
-@media (max-width: 1050px) {
+@media (max-width: 900px) {
   #desktopMain {
     display: none;
   }
@@ -232,13 +237,13 @@ visibility: hidden;
     border-width:0px;
   }
   .listItem {
-    line-height: 4;
+    line-height: 3;
     border-radius: 2px;
     width: auto;
     text-align: center;
-    height: 70px;
+    height: 115px;
     position: relative;
-    display: inline-block;
+    display: block;
     cursor: pointer;
     display: static;
   }
@@ -258,8 +263,9 @@ visibility: hidden;
     display: flex;
     line-height: 2;
     text-align: center;
-    background-color: #46604240;
-    backdrop-filter: blur(5px);
+    /*background-color: #46604240;
+    backdrop-filter: blur(5px);*/
+    background-color: white;
   }
   .dropListContent a:hover {
     background-color: #4761434f;
