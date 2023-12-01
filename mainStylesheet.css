@@ -203,6 +203,7 @@ footer > p {
 .flexBox {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /*Styled paragraphs in central column on generic pages */
@@ -235,26 +236,6 @@ footer > p {
   object-fit: cover;
   background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(Images/Icons/yellowIcon.png);
   background-position: center;
-}
-#rockRose {
-  object-fit: cover;
-  background-image: url(fear-flowers/icons/rockrosetile.png);
-}
-#aspen {
-  object-fit: cover;
-  background-image: url(fear-flowers/icons/aspenTile.png);
-}
-#cherryPlum {
-  object-fit: cover;
-  background-image: url(fear-flowers/icons/cherryplumtile.png);
-}
-#Minulus {
-  object-fit: cover;
-  background-image: url(fear-flowers/icons/minulusTile.png);
-}
-#redChestnut {
-  object-fit: cover;
-  background-image: url(fear-flowers/icons/redchestnuttile.png);
 }
 
 .endeavourLogo {
