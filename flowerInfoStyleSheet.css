@@ -3,6 +3,7 @@ body {
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 p, li {
   font-size: 0.9rem;

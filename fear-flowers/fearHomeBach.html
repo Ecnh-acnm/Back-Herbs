@@ -3,11 +3,28 @@
 
 <head>
   <meta name="viewport" content="width=device-width" />
-  <title>Fear Bach</title>
-  <link rel="stylesheet" href="mainStylesheet.css">
-  <link rel="stylesheet" href="singleEmotionStylesheetBase-stylesheet.css">
+  <title>Bach Flowers for Fear</title>
+  <link rel="stylesheet" href="../mainStylesheet.css">
+  <link rel="stylesheet" href="../singleEmotionStylesheetBase-stylesheet.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-  <link rel="icon" href="Images/Icons/leaf-icon.png">
+  <link rel="icon" href="../Images/Icons/bach-favicon.png">
+  <style>
+    #aspen {
+      background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0.2)), url(Images/aspen-1.png);
+    }
+    #cherryPlum {
+      background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0.2)), url(Images/cherryplum-1.png);
+    }
+    #minulus {
+      background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0.2)), url(Images/Mimulus-1.png);
+    }
+    #redChestnut {
+      background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0.2)), url(Images/redchestnut-2.png);
+    }
+    #rockRose {
+      background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0.2)), url(Images/rockrose-1.png);
+    }
+  </style>
 </head>
 
 <body>
@@ -15,13 +32,13 @@
   <div class="toggle"></div>
   <div class="sidebar">
     <ul class="hiddenMenu">
-      <li class="navitem"><a href="homePage.html" target="_blank" data-text="Home" class="navMobileLink">Home</a></li>
-      <li class="navitem"><a href="fullFlowerList.html" data-text="Flower list" class="navMobileLink">Flower list</a></li>
-      <li class="navitem"><a href="bachAndNativeFlowers.html" data-text="Flower types" class="navMobileLink">Flower types</a></li>
-      <li class="navitem"><a href="emotionsHome.html" data-text="Emotions" class="navMobileLink">Emotions</a></li>
-      <li class="navitem"><a href="bachFlowers.html" data-text="Bach Flowers" class="navMobileLink">Bach Flowers</a></li>
-      <li class="navitem"><a href="nativeFlowers.html" data-text="Native Flowers" class="navMobileLink">Native Flowers</a></li>
-      <li class="navitem"><a href="Bottling_and_Dosing_Guide.html" data-text="Native Flowers" class="navMobileLink">Preparation Guide</a></li>
+      <li class="navitem"><a href="../homePage.html" target="_blank" data-text="Home" class="navMobileLink">Home</a></li>
+      <li class="navitem"><a href="../fullFlowerList.html" data-text="Flower list" class="navMobileLink">Flower list</a></li>
+      <li class="navitem"><a href="../bachAndNativeFlowers.html" data-text="Flower types" class="navMobileLink">Flower types</a></li>
+      <li class="navitem"><a href="../emotionsHome.html" data-text="Emotions" class="navMobileLink">Emotions</a></li>
+      <li class="navitem"><a href="../bachFlowers.html" data-text="Bach Flowers" class="navMobileLink">Bach Flowers</a></li>
+      <li class="navitem"><a href="../nativeFlowers.html" data-text="Native Flowers" class="navMobileLink">Native Flowers</a></li>
+      <li class="navitem"><a href="../Bottling_and_Dosing_Guide.html" data-text="Native Flowers" class="navMobileLink">Preparation Guide</a></li>
     </ul>
   </div>
   <!--onkeyup="myFunction()" this was in the input bar to access the JS code to search by id-->
@@ -33,27 +50,27 @@
 <div class="dropdown">
   <a class="dropbtn">Flower list</a>
   <div class="dropdown-content">
-    <a href="bachFlowerList.html">Bach Flowers</a>
-    <a href="nativeFlowerList.html">Native Flowers</a>
-    <a href="fullFlowerList.html">Full Flower List</a>
+    <a href="../bachFlowerList.html">Bach Flowers</a>
+    <a href="../nativeFlowerList.html">Native Flowers</a>
+    <a href="../fullFlowerList.html">Full Flower List</a>
   </div>
 </div>
     <div class="dropdown">
       <a class="dropbtn">Emotions</a>
       <div class="dropdown-content">
-        <a href="emotionsHome.html">Emotions Homepage</a>
-        <a href="emotionsBach.html">Bach Emotions</a>
-        <a href="emotionsNative.html">Native Emotions</a>
+        <a href="../emotionsHome.html">Emotions Homepage</a>
+        <a href="../emotionsBach.html">Bach Emotions</a>
+        <a href="../emotionsNative.html">Native Emotions</a>
       </div>
     </div>
     <div class="dropdown">
-      <a class="dropbtn"href="bachFlowers.html">Bach</a>
+      <a class="dropbtn"href="../bachFlowers.html">Bach</a>
     </div>
     <div class="dropdown">
-      <a class="dropbtn"href="nativeFlowers.html">Native</a>
+      <a class="dropbtn"href="../nativeFlowers.html">Native</a>
     </div>
     <div class="dropdown">
-        <a class="dropbtn"href="Bottling_and_Dosing_Guide.html">Preparation</a>
+        <a class="dropbtn"href="../Bottling_and_Dosing_Guide.html">Preparation</a>
       </div>
 </div>
     <div class="splashHeading">
@@ -63,11 +80,11 @@
 <div class="mainText">
 <h3>Bach Fear Flowers</h3>
 <div class="emotionsListShell">
-<a class="optionBox" href="fear-flowers/HTML_Aspen.html">Aspen</a>
-<a class="optionBox" href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
-<a class="optionBox" href="fear-flowers/HTML_Minulus.html">Minulus</a>
-<a class="optionBox" href="fear-flowers/HTML_RedChestnut.html">Red Chestnut</a>
-<a class="optionBox" href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
+<a class="optionBox" id="aspen" href="HTML_Aspen.html">Aspen</a>
+<a class="optionBox" id="cherryPlum" href="HTML_CherryPlum.html">Cherry Plum</a>
+<a class="optionBox" id="minulus" href="HTML_Minulus.html">Minulus</a>
+<a class="optionBox" id="redChestnut" href="HTML_RedChestnut.html">Red Chestnut</a>
+<a class="optionBox" id="rockRose" href="HTML_RockRose.html">Rock Rose</a>
 </div>
 </div>
 
