@@ -259,8 +259,9 @@ footer > p {
   border-radius: 4px;
   color: white;
   margin: 15px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   transition: all 250ms;
+  letter-spacing: 6px;
 }
 .videoLink:hover {
   /*background-color: #fff0;

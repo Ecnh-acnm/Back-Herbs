@@ -1,6 +1,6 @@
 /* Search Page Styling */
 body {
-    background-image: linear-gradient(rgb(255 255 255 / 95%), rgba(255, 255, 255, 0)),url(Images/Bgs/flower-bg-2.jpg);
+    background-image: linear-gradient(rgb(255 255 255 / 95%), rgba(255, 255, 255, 0)),url(Images/Bgs/meadow.jpg);
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,8 +37,9 @@ footer {
 
 .searchableItem > a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1rem;
     color: white;
+    letter-spacing: 3px;
 }
 .searchImageAsset {
     width: 10%;
