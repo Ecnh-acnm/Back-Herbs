@@ -91,7 +91,7 @@ footer {
   padding: 20px;
   border-radius: 15px;
   margin-top: 30px;
-  margin-left: 39px;
+  margin-left: 10px;
 
 }
 
@@ -150,10 +150,11 @@ p, li. h2, h3 {
   .ImageAsset {
     position: static;
     overflow: hidden;
-    width: 40%;
+    min-width: 30%;
     border: 20px solid white;
     border-radius: 10px;
-    margin: 2rem;
+    margin: 3rem;
+    max-width: fit-content;
   }
   .imageBar {
     width: 100%;
@@ -270,12 +271,13 @@ p, li. h2, h3 {
   }
   /* link to extra resources on bottom left */
 .videoLink {
-  width: 70%;
+  width: auto;
   background-color: #455F41;
   color: white;
   padding: 10px;
   border-radius: 15px;
   margin-top: 0px;
+  text-align: center;
 }
 /* individual elements of info on the text side on the left */
 .infoBox {
@@ -292,7 +294,7 @@ p, li. h2, h3 {
 }
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1750px) {
   p, li {
     font-size: 1rem;
   }
@@ -300,12 +302,13 @@ p, li. h2, h3 {
     font-size: 1.5rem;
   }
   h2 {
-    font-size:2.5rem;
+    font-size:2rem;
   }
   .ImageAsset {
     margin: 50px;
   }
   .videoLink {
     max-height: 25px;
+    margin-left: 39px;
   }
 }

@@ -3,12 +3,83 @@
 
 <head>
   <meta name="viewport" content="width=device-width" />
-  <title>Emotions with Native Flowers</title>
+  <title>Emotions with ABFE</title>
   <link rel="stylesheet" href="mainStylesheet.css">
   <link rel="stylesheet" href="emotionStyleSheets.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
   <link rel="icon" href="Images/Icons/leaf-icon.png">
-
+  <style>
+    #fearTile {
+      background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(fear-flowers/Images/redchestnut-2.png);
+      background-position: top;
+      background-size: cover;
+    }
+    #fearTile:hover {
+      background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgba(255, 255, 255, 0.7)), url(fear-flowers/Images/redchestnut-2.png);
+      background-position: top;
+      background-size: cover;
+    }
+    #uncertaintyTile {
+      background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(Uncertainty-flowers/Images/gentian-2.png);
+      background-position: top;
+      background-size: cover;
+    }
+    #uncertaintyTile:hover {
+      background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0.7)), url(Uncertainty-flowers/Images/gentian-2.png);
+      background-position: top;
+      background-size: cover;
+    }
+    #presentTile {
+      background-image: linear-gradient( rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(lack-of-interest-flowers/Images/whiteChestnut-1.png);
+      background-position: top;
+      background-size: cover;
+    }
+    #presentTile:hover {
+      background-image: linear-gradient( rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0.7)), url(lack-of-interest-flowers/Images/whiteChestnut-1.png);
+      background-position: top;
+      background-size: cover;
+    }
+    #lonelinessTile {
+      background-image: linear-gradient(rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(Loneliness-flowers/Images/Heather5AW.jpg);
+      background-position: top;
+      background-size: cover;
+    }
+    #lonelinessTile:hover {
+      background-image: linear-gradient(rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0.7)), url(Loneliness-flowers/Images/Heather5AW.jpg);
+      background-position: top;
+      background-size: cover;
+    }
+    #oversensitivityTile {
+      background-image: linear-gradient(rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(Oversensitivity-flowers/Images/Centaury6AE86.jpg);
+      background-position: top;
+      background-size: cover;
+    }
+    #oversensitivityTile:hover {
+      background-image: linear-gradient(rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0.7)), url(Oversensitivity-flowers/Images/Centaury6AE86.jpg);
+      background-position: top;
+      background-size: cover;
+    }
+    #despondentTile {
+      background-image: linear-gradient(rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(despondency&despair-flowers/Images/CrabApple3AW.jpg);
+      background-position: top;
+      background-size: cover;
+    }
+    #despondentTile:hover {
+      background-image: linear-gradient(rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0.7)), url(despondency&despair-flowers/Images/CrabApple3AW.jpg);
+      background-position: top;
+      background-size: cover;
+    }
+    #overcareTile {
+      background-image: linear-gradient(rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(overcare-flowers/Images/Chicory1AW86.jpg);
+      background-position: top;
+      background-size: cover;
+    }
+    #overcareTile:hover {
+      background-image: linear-gradient(rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0.7)), url(overcare-flowers/Images/Chicory1AW86.jpg);
+      background-position: top;
+      background-size: cover;
+    }
+  </style>
 </head>
 
 <body>
@@ -16,7 +87,7 @@
   <div class="toggle"></div>
   <div class="sidebar">
     <ul class="hiddenMenu">
-      <li class="navitem"><a href="homePage.html" target="_blank" data-text="Home" class="navMobileLink">Home</a></li>
+      <li class="navitem"><a href="homePage.html" data-text="Home" class="navMobileLink">Home</a></li>
       <li class="navitem"><a href="fullFlowerList.html" data-text="Flower list" class="navMobileLink">Flower list</a></li>
       <li class="navitem"><a href="bachAndNativeFlowers.html" data-text="Flower types" class="navMobileLink">Flower types</a></li>
       <li class="navitem"><a href="emotionsHome.html" data-text="Emotions" class="navMobileLink">Emotions</a></li>
@@ -58,76 +129,84 @@
       </div>
 </div>
     <div class="splashHeading">
-      <h2>Emotions with Native Flowers</h2>
+      <h2>Emotions with Bach Flowers</h2>
     </div>
 <div class="main">
 <div class="mainText">
   <h3>Dividing flowers by emotion:</h3>
 <p class="p-body">We can sort the different emotional spectrums into 8 different categories, listed below.</p>
 <div class="mobileDiv">
-  <ul class="emotionsListShell">
-    <li onclick="fearShow()" class="listItem"><a href="fearHomeNative.html"class="dropTileButton">Fear</a>
+  <div class="emotionsListShell">
+    <div onclick="fearShow()" class="listItem" id="fearTile"><div class="dropTileButton">Fear</div>
       <div class="dropListContent" id="fearDrop">
+        <a href="nat-fear-flowers/fearHomeNative.html">Fear Flowers Home</a>
         <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
         <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
         <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
         <a href="fear-flowers/HTML_RedChestnut.html">Red Chestnut</a>
         <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
-      </div></li>
-    <li onclick="angerShow()" class="listItem"><a class="dropTileButton">Anger</a>
-      <div class="dropListContent" id="angerDrop">
-        <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
-        <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
-        <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
-        <a href="fear-flowers/HTML_RedChestnut.html">Red Chestnut</a>
-        <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
-      </div></li>
-    <li onclick="sadnessShow()" class="listItem"><a class="dropTileButton">Sadness</a>
-      <div class="dropListContent" id="sadnessDrop">
-        <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
-        <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
-        <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
-        <a href="fear-flowers/HTML_RedChestnut.html">Red Chestnut</a>
-        <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
-      </div></li>
-    <li onclick="joyShow()" class="listItem"><a class="dropTileButton">Joy</a>
-      <div class="dropListContent" id="joyDrop">
-        <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
-        <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
-        <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
-        <a href="fear-flowers/HTML_RedChestnut.html">Red Chestnut</a>
-        <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
-      </div></li>
-  </ul>
-  <ul class="emotionsListShell">
-    <li onclick="interestShow()" class="listItem"><a class="dropTileButton">Interest</a>
-      <div class="dropListContent" id="interestDrop">
-        <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
-        <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
-        <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
-        <a href="fear-flowers/HTML_RedChestnut.html">Red Chestnut</a>
-        <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
+      </div></div>
+    <div onclick="UncertaintyShow()" class="listItem" id="uncertaintyTile"><div class="dropTileButton">Uncertainty</div>
+      <div class="dropListContent" id="UncertaintyDrop">
+        <a href="Uncertainty-flowers/uncertaintyHomeBach.html">Uncertainty <br>Flowers Home</a>
+        <a href="Uncertainty-flowers/HTML_Cerato.html">Cerato</a>
+        <a href="Uncertainty-flowers/HTML_Gentian.html">Gentian</a>
+        <a href="Uncertainty-flowers/HTML_Gorse.html">Gorse</a>
+        <a href="Uncertainty-flowers/HTML_RedHornbeam.html">Red Hornbeam</a>
+        <a href="Uncertainty-flowers/HTML_Scleranthus.html">Scleranthus</a>
+        <a href="Uncertainty-flowers/HTML_WildOat.html">Wild Oat</a>
+      </div></div>
+    <div onclick="presentShow()" class="listItem" id="presentTile"><div class="dropTileButton">Lack of interest <br>in the present</div>
+      <div class="dropListContent" id="presentDrop">
+        <a href="lack-of-interest-flowers/lackofinterestHomeBach.html">Lack of interest <br>Flowers Home</a>
+        <a href="lack-of-interest-flowers/HTML_ChestnutBud.html">Chestnut Bud</a>
+        <a href="lack-of-interest-flowers/HTML_Clematis.html">Clematis</a>
+        <a href="lack-of-interest-flowers/HTML_Honeysuckle.html">Honeysuckle</a>
+        <a href="lack-of-interest-flowers/HTML_Mustard.html">Mustard</a>
+        <a href="lack-of-interest-flowers/HTML_Olive.html">Olive</a>
+        <a href="lack-of-interest-flowers/HTML_WhiteChestnut.html">White Chestnut</a>
+        <a href="lack-of-interest-flowers/HTML_WildRose.html">Wild Rose</a>
+      </div></div>
+    <div onclick="lonelinessShow()" class="listItem" id="lonelinessTile"><div class="dropTileButton">Loneliness</div>
+      <div class="dropListContent" id="lonelinessDrop">
+        <a href="Loneliness-flowers/lonelinessHomeBach.html">Loneliness<br> Flowers Home</a>
+        <a href="Loneliness-flowers/HTML_Heather.html">Heather</a>
+        <a href="Loneliness-flowers/HTML_Impatiens.html">Impatiens</a>
+        <a href="Loneliness-flowers/HTML_WaterViolet.html">Water Violet</a>
+      </div></div>
+    <div onclick="oversensitivityShow()" class="listItem" id="oversensitivityTile"><div class="dropTileButton">Oversensitivity</div>
+      <div class="dropListContent" id="oversensitivityDrop">
+        <a href="Oversensitivity-flowers/oversensitivityHomeBach.html">Oversensitivity <br>Flowers Home</a>
+        <a href="Oversensitivity-flowers/HTML_Argimony.html">Argimony</a>
+        <a href="Oversensitivity-flowers/HTML_Centaury.html">Centaury</a>
+        <a href="Oversensitivity-flowers/HTML_Holly.html">Holly</a>
+        <a href="Oversensitivity-flowers/HTML_Walnut.html">Walnut</a>
       </div>
-    </li>
-    <li onclick="surpriseShow()" class="listItem"><a class="dropTileButton">Surprise</a>
-      <div class="dropListContent" id="surpriseDrop">
-        <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
-        <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
-        <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
-        <a href="fear-flowers/HTML_RedChestnut.html">Red Chestnut</a>
-        <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
+    </div>
+    <div onclick="despondentShow()" class="listItem" id="despondentTile"><div class="dropTileButton">Despondency <br>& Despair</div>
+      <div class="dropListContent" id="despondentDrop">
+        <a href="despondency&despair-flowers/D&DhomeBach.html">Despondency & Despair <br>Flowers Home</a>
+        <a href="despondency&despair-flowers/HTML_CrabApple.html">Crab Apple</a>
+        <a href="despondency&despair-flowers/HTML_Elm.html">Elm</a>
+        <a href="despondency&despair-flowers/HTML_Larch.html">Larch</a>
+        <a href="despondency&despair-flowers/HTML_Oak.html">Oakt</a>
+        <a href="despondency&despair-flowers/HTML_Pine.html">Pine</a>
+        <a href="despondency&despair-flowers/HTML_StarOfBethlehem.html">Star of Bethlehem</a>
+        <a href="despondency&despair-flowers/HTML_SweetChestnut.html">Sweet Chestnut</a>
+        <a href="despondency&despair-flowers/HTML_Willow.html">Willow</a>
       </div>
-    </li>
-    <li onclick="disgustShow()" class="listItem"><a class="dropTileButton">Disgust</a>
-      <div class="dropListContent" id="disgustDrop">
-        <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
-        <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
-        <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
-        <a href="fear-flowers/HTML_RedChestnut.html">Red Chestnut</a>
-        <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
+    </div>
+    <div onclick="overcareShow()" class="listItem" id="overcareTile"><div class="dropTileButton">Overcare</div>
+      <div class="dropListContent" id="overcareDrop">
+        <a href="overcare-flowers/overcareHomeBach.html">Overcare Flowers Home</a>
+        <a href="overcare-flowers/HTML_Beech.html">Beech</a>
+        <a href="overcare-flowers/HTML_Chicory.html">Chicory</a>
+        <a href="overcare-flowers/HTML_RockWater.html">Rock Water</a>
+        <a href="overcare-flowers/HTML_Vervain.html">Vervain</a>
+        <a href="overcare-flowers/HTML_Vine.html">Vine</a>
       </div>
-    </li>
-    <li onclick="shameShow()" class="listItem"><a class="dropTileButton">Shame</a>
+    </div>
+    <!--<li onclick="shameShow()" class="listItem"><a class="dropTileButton">Shame</a>
       <div class="dropListContent" id="shameDrop">
         <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
         <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
@@ -135,8 +214,8 @@
         <a href="fear-flowers/HTML_RedChestnut.html">Red Chestnut</a>
         <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
       </div>
-    </li>
-  </ul>
+    </li>-->
+  </div>
 </div>
     <p class="p-body">
       <h3>How do flowers and emotions connect?</h3>
@@ -186,28 +265,28 @@ In 1936, he published his seminal work "The Twelve Healers and Other Remedies," 
   document.getElementById("fearDrop").classList.toggle("reveal");
 }
 
-function angerShow() {
-  document.getElementById("angerDrop").classList.toggle("reveal");
+function UncertaintyShow() {
+  document.getElementById("UncertaintyDrop").classList.toggle("reveal");
 }
 
-function sadnessShow() {
-  document.getElementById("sadnessDrop").classList.toggle("reveal");
+function presentShow() {
+  document.getElementById("presentDrop").classList.toggle("reveal");
 }
 
-function joyShow() {
-  document.getElementById("joyDrop").classList.toggle("reveal");
+function lonelinessShow() {
+  document.getElementById("lonelinessDrop").classList.toggle("reveal");
 }
 
-function interestShow() {
-  document.getElementById("interestDrop").classList.toggle("reveal");
+function oversensitivityShow() {
+  document.getElementById("oversensitivityDrop").classList.toggle("reveal");
 }
 
-function surpriseShow() {
-  document.getElementById("surpriseDrop").classList.toggle("reveal");
+function despondentShow() {
+  document.getElementById("despondentDrop").classList.toggle("reveal");
 }
 
-function disgustShow() {
-  document.getElementById("disgustDrop").classList.toggle("reveal");
+function overcareShow() {
+  document.getElementById("overcareDrop").classList.toggle("reveal");
 }
 
 function shameShow() {
