@@ -294,7 +294,7 @@ p, li. h2, h3 {
 }
 }
 
-@media (min-width: 1750px) {
+@media (min-width: 1850px) {
   p, li {
     font-size: 1rem;
   }
