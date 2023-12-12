@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html charset="utf-8">
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>Tall Yellow Top</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <link rel="stylesheet" href="../mainStylesheet.css">
+  <link rel="stylesheet" href="../flowerInfoStyleSheet.css">
+  <link rel="icon" href="../Images/Icons/native-icon.png">
+  
+</head>
+
+<body>
+  <!--From toggle to sidebar (inclusive) is the mobile menu. Triggers at 900 pixels in width but may adjust.-->
+  <div class="toggle"></div>
+  <div class="sidebar">
+    <ul class="hiddenMenu">
+      <li class="navitem"><a href="../homePage.html" data-text="Home" class="navMobileLink">Home</a></li>
+      <li class="navitem"><a href="../fullFlowerList.html" data-text="Flower list" class="navMobileLink">Flower list</a></li>
+      <li class="navitem"><a href="../bachAndNativeFlowers.html" data-text="Flower types" class="navMobileLink">Flower types</a></li>
+      <li class="navitem"><a href="../emotionsHome.html" data-text="Emotions" class="navMobileLink">Emotions</a></li>
+      <li class="navitem"><a href="../bachFlowers.html" data-text="Bach Flowers" class="navMobileLink">Bach Flowers</a></li>
+      <li class="navitem"><a href="../nativeFlowers.html" data-text="Native Flowers" class="navMobileLink">Australian Flowers</a></li>
+      <li class="navitem"><a href="../Bottling_and_Dosing_Guide.html" data-text="Native Flowers" class="navMobileLink">Preparation Guide</a></li>
+    </ul>
+  </div>
+  <!--onkeyup="myFunction()" this was in the input bar to access the JS code to search by id-->
+  <!--Menu bar for navigation, from menubar div to the input div. Turns off at 900 pixels and under-->
+<div class="menubar">
+<div class="dropdown">
+  <a class="dropbtn"href="homePage.html">Home</a>
+</div>
+<div class="dropdown">
+  <a class="dropbtn">Flower list</a>
+  <div class="dropdown-content">
+    <a href="../bachFlowerList.html">Bach Flowers</a>
+    <a href="../nativeFlowerList.html">Australian Flowers</a>
+    <a href="../fullFlowerList.html">Full Flower List</a>
+  </div>
+</div>
+    <div class="dropdown">
+      <a class="dropbtn">Emotions</a>
+      <div class="dropdown-content">
+        <a href="../emotionsHome.html">Emotions Homepage</a>
+        <a href="../emotionsBach.html">Bach Emotions</a>
+        <a href="../emotionsNative.html">Australian Emotions</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn"href="../bachFlowers.html">Bach</a>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn"href="../nativeFlowers.html">Australian</a>
+    </div>
+    <div class="dropdown">
+        <a class="dropbtn"href="../Bottling_and_Dosing_Guide.html">Preparation</a>
+      </div>
+</div>
+
+
+<div class="herbColumn">
+  <h2><strong>Tall Yellow Top</strong></h2>
+    <h3><em>Senecio magnificus</em></h3>
+    <div class="infoBox"><h3>Keywords</h3><p>: Alienation. No sense of belonging.</p></div>
+    <div class="infoBox"><h3>Negative Indications</h3>
+      <p>: Alienation. Isolation. Loneliness. No feeling of connection or belonging.</p></div>
+    <div class="infoBox"><h3>Positive Outcomes</h3><p>: Sense of belonging. Acceptance of self and others. Knowing that you are "home." Ability to reach out to others.</p></div>
+    <p class="credit">(Ausflowers, 2023; Mark Marathon, 2012)</p>
+    <div class="infoBox"><h3>Clinical Applications and Uses</h3>
+      <p>
+        <ul>
+        <li>This essence is for loneliness and isolation. It addresses alienation where there is a lack of connection with no sense of belonging to any community - family, workplace, or country. It is also for lack of love - Tall Yellow Top helps to reconnect the head and heart.</li>
+        <li>Often, Tall Yellow Top types have lived in this state for a long time. Consequently, the essence needs to be taken for 6 to 8 weeks at a time. The benefits will be gradual. This essence works well for people who feel that they are strangers in a strange land and that they don't belong. They feel like they have been sent to the wrong place, where they just don't fit in.</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+<div class="imageBar">
+  <img class="ImageAsset"
+    src="Images/tall-yellow-top-1.png"
+    alt="Tall Yellow Top">
+  <img class="ImageAsset"
+    src="Images/tall-yellow-top-2.png"
+    alt="Tall Yellow Top"> 
+    <p class="videoLink">
+      <a href="https://ausflowers.com.au/products/tall-yellow-top" target="_blank">Click here for more information about Tall Yellow Top.</a>   
+</div>
+<footer>
+  <p>Endeavour College of Natural Health © 2023</p>
+</footer>
+      
+</div>
+
+
+  </body>
+
+  <script
+	src="https://code.jquery.com/jquery-3.7.1.js"
+	integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+	crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('.sidebar').toggleClass('active')
+            })
+        })
+    </script>
+		
+		<script>// Function to pause the video when the page loads
+    function pauseVideo() {
+      // Get the iframe element  
+      var iframe = document.getElementById("videoIframe");
+        // Check if the iframe exists  
+        if (iframe) {
+        // Get the content window of the iframe    
+        var iframeContentWindow = iframe.contentWindow;
+            // Check if the content window is accessible    
+            if (iframeContentWindow) {
+          // Pause the video within the iframe      
+          iframeContentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        }
+      }
+    }
+    
+    // Attach the pauseVideo function to the window's onload event
+    window.onload = pauseVideo;
+    </script>

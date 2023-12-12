@@ -27,7 +27,7 @@ p, li {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  left: 650px;
+  left: 750px;
 }
 /* Attribution for info on flower pages */
 .credit {
@@ -41,8 +41,8 @@ p, li {
   position: fixed;
   top: 0px;
   left: 0px;
-  max-width: 550px;
-  /*max-width:650px;*/
+  min-width: 550px;
+  max-width:650px;
   height: 100vh;
   padding: 70px 40px 0 40px;
 }
