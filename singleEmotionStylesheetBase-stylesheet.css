@@ -35,7 +35,7 @@ h3 {
     margin: 15px;
     margin-bottom: 15px;
     margin-top: 0px;
-    width: 250px;
+    min-width: 250px;
     max-width: 500px;
     height: 200px;
     border-radius: 5px;
