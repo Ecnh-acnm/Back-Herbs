@@ -10,7 +10,7 @@
   <link rel="icon" href="Images/Icons/leaf-icon.png">
   <style>
     #fearTile {
-      background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(nat-fear-flowers/Images/dog-rose.jpg);
+      background-image: linear-gradient(0turn, rgb(255, 255, 255, 0.83), rgb(255 255 255 / 0%)), url(nat-fear-flowers/Images/crowea-2.png);
       background-position: top;
       background-size: cover;
     }
@@ -163,8 +163,8 @@
         <a href="nat-uncertainty-flowers/HTML_SturtDesertRose.html">Sturt Desert Rose</a>
         <a href="nat-uncertainty-flowers/HTML_TurkeyBush.html">Turkey Bush</a>
       </div></div>
-    <div onclick="presentShow()" class="listItem" id="presentTile"><div class="dropTileButton">Procrastination</div>
-      <div class="dropListContent" id="presentDrop">
+    <div onclick="procrastinationShow()" class="listItem" id="presentTile"><div class="dropTileButton">Procrastination</div>
+      <div class="dropListContent" id="procrastinationDrop">
         <a href="nat-procrastination/procrastinationHomeNative.html">Procrastination<br>Flowers Home</a>
         <a href="nat-procrastination/HTML_Isopogon.html">Isopogon</a>
         <a href="nat-procrastination/HTML_Jacaranda.html">Jacaranda</a>
@@ -192,21 +192,13 @@
     <div onclick="despondentShow()" class="listItem" id="despondentTile"><div class="dropTileButton">Despondency <br>& Despair</div>
       <div class="dropListContent" id="despondentDrop">
         <a href="nat-despondency&despair/d&dHomeNative.html">Despondency & Despair <br>Flowers Home</a>
-        <a href="nat-despondency&despair/HTML_BillyGoatPlum.html">Billy Goat Plum</a>
-        <a href="nat-despondency&despair/HTML_BushGardenia.html">Bush Gardenia</a>
-        <a href="nat-despondency&despair/HTML_FlannelFlower.html">Flannel Flower</a>
-        <a href="nat-despondency&despair/HTML_LittleFlannelFlower.html">Little Flannel Flower</a>
-        <a href="nat-despondency&despair/HTML_RedSuvaFrangipani.html">Red Suva Frangipani</a>
-        <a href="nat-despondency&despair/HTML_SheOak.html">She Oak</a>
         <a href="nat-despondency&despair/HTML_SturtDesertPea.html">Sturt Desert Pea</a>
         <a href="nat-despondency&despair/HTML_SunshineWattle.html">Sunshine Wattle</a>
         <a href="nat-despondency&despair/HTML_Waratah.html">Waratah</a>
-        <a href="nat-despondency&despair/HTML_WeddingBush.html">Wedding Bush</a>
-        <a href="nat-despondency&despair/HTML_Wisteria.html">Wisteria</a>
       </div>
     </div>
-    <div onclick="overcareShow()" class="listItem" id="overcareTile"><div class="dropTileButton">Anger</div>
-      <div class="dropListContent" id="overcareDrop">
+    <div onclick="angerShow()" class="listItem" id="overcareTile"><div class="dropTileButton">Anger</div>
+      <div class="dropListContent" id="angerDrop">
         <a href="nat-anger/angerHomeNative.html">Anger Flowers Home</a>
         <a href="nat-anger/HTML_Bottlebrush.html">Bottlebrush</a>
         <a href="nat-anger/HTML_DaggerHakea.html">Dagger Hakea</a>
@@ -218,15 +210,19 @@
         <a href="nat-anger/HTML_YellowCowslipOrchid.html">Yellow Cowslip Orchid</a>
       </div>
     </div>
-    <!--<li onclick="shameShow()" class="listItem"><a class="dropTileButton">Shame</a>
-      <div class="dropListContent" id="shameDrop">
-        <a href="fear-flowers/HTML_Aspen.html">Aspen</a>
-        <a href="fear-flowers/HTML_CherryPlum.html">Cherry Plum</a>
-        <a href="fear-flowers/HTML_Minulus.html">Minulus</a>
-        <a href="fear-flowers/HTML_RedChestnut.html">Red Chestnut</a>
-        <a href="fear-flowers/HTML_RockRose.html">Rock Rose</a>
+    <li onclick="turmoilShow()" class="listItem"><a class="dropTileButton">Emotional Turmoil</a>
+      <div class="dropListContent" id="turmoilDrop">
+        <a href="nat-emotional-turmoil/turmoilHomeNative.html">Emotional Turmoil<br>Flowers Home</a>
+        <a href="nat-emotional-turmoil/HTML_BillyGoatPlum.html">Billy Goat Plum</a>
+        <a href="nat-emotional-turmoil/HTML_BushGardenia.html">Bush Gardenia</a>
+        <a href="nat-emotional-turmoil/HTML_FlannelFlower.html">Flannel Flower</a>
+        <a href="nat-emotional-turmoil/HTML_LittleFlannelFlower.html">Little Flannel Flower</a>
+        <a href="nat-emotional-turmoil/HTML_RedSuvaFrangipani.html">Red Suva Frangipani</a>
+        <a href="nat-emotional-turmoil/HTML_SheOak.html">She Oak</a>
+        <a href="nat-emotional-turmoil/HTML_WeddingBush.html">Wedding Bush</a>
+        <a href="nat-emotional-turmoil/HTML_Wisteria.html">Wisteria</a>
       </div>
-    </li>-->
+    </li>
   </div>
 </div>
     <p class="p-body">
@@ -281,8 +277,8 @@ function UncertaintyShow() {
   document.getElementById("UncertaintyDrop").classList.toggle("reveal");
 }
 
-function presentShow() {
-  document.getElementById("presentDrop").classList.toggle("reveal");
+function procrastinationShow() {
+  document.getElementById("procrastinationDrop").classList.toggle("reveal");
 }
 
 function lonelinessShow() {
@@ -297,12 +293,12 @@ function despondentShow() {
   document.getElementById("despondentDrop").classList.toggle("reveal");
 }
 
-function overcareShow() {
-  document.getElementById("overcareDrop").classList.toggle("reveal");
+function angerShow() {
+  document.getElementById("angerDrop").classList.toggle("reveal");
 }
 
-function shameShow() {
-  document.getElementById("shameDrop").classList.toggle("reveal");
+function turmoilShow() {
+  document.getElementById("turmoilDrop").classList.toggle("reveal");
 }
 
 

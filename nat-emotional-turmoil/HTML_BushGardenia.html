@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html charset="utf-8">
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>Hibbertia</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <link rel="stylesheet" href="../mainStylesheet.css">
+  <link rel="stylesheet" href="../flowerInfoStyleSheet.css">
+  <link rel="icon" href="../Images/Icons/native-icon.png">
+  
+</head>
+
+<body>
+  <!--From toggle to sidebar (inclusive) is the mobile menu. Triggers at 900 pixels in width but may adjust.-->
+  <div class="toggle"></div>
+  <div class="sidebar">
+    <ul class="hiddenMenu">
+      <li class="navitem"><a href="../homePage.html" data-text="Home" class="navMobileLink">Home</a></li>
+      <li class="navitem"><a href="../fullFlowerList.html" data-text="Flower list" class="navMobileLink">Flower list</a></li>
+      <li class="navitem"><a href="../bachAndNativeFlowers.html" data-text="Flower types" class="navMobileLink">Flower types</a></li>
+      <li class="navitem"><a href="../emotionsHome.html" data-text="Emotions" class="navMobileLink">Emotions</a></li>
+      <li class="navitem"><a href="../bachFlowers.html" data-text="Bach Flowers" class="navMobileLink">Bach Flowers</a></li>
+      <li class="navitem"><a href="../nativeFlowers.html" data-text="Native Flowers" class="navMobileLink">Australian Flowers</a></li>
+      <li class="navitem"><a href="../Bottling_and_Dosing_Guide.html" data-text="Native Flowers" class="navMobileLink">Preparation Guide</a></li>
+    </ul>
+  </div>
+  <!--onkeyup="myFunction()" this was in the input bar to access the JS code to search by id-->
+  <!--Menu bar for navigation, from menubar div to the input div. Turns off at 900 pixels and under-->
+<div class="menubar">
+<div class="dropdown">
+  <a class="dropbtn"href="homePage.html">Home</a>
+</div>
+<div class="dropdown">
+  <a class="dropbtn">Flower list</a>
+  <div class="dropdown-content">
+    <a href="../bachFlowerList.html">Bach Flowers</a>
+    <a href="../nativeFlowerList.html">Australian Flowers</a>
+    <a href="../fullFlowerList.html">Full Flower List</a>
+  </div>
+</div>
+    <div class="dropdown">
+      <a class="dropbtn">Emotions</a>
+      <div class="dropdown-content">
+        <a href="../emotionsHome.html">Emotions Homepage</a>
+        <a href="../emotionsBach.html">Bach Emotions</a>
+        <a href="../emotionsNative.html">Australian Emotions</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn"href="../bachFlowers.html">Bach</a>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn"href="../nativeFlowers.html">Australian</a>
+    </div>
+    <div class="dropdown">
+        <a class="dropbtn"href="../Bottling_and_Dosing_Guide.html">Preparation</a>
+      </div>
+</div>
+
+
+<div class="herbColumn">
+  <h2><strong>Hibbertia</strong></h2>
+    <h3><em>Hibbertia pendunculata</em></h3>
+    <div class="infoBox"><h3>Keywords</h3><p>: Connect the heart with the intellect.</p></div>
+    <div class="infoBox"><h3>Negative Indications</h3>
+      <p>: Fanatical about self-improvement. Strict and regimented with the self. Excessive self discipline. Superiority complex. Driven to aquire knowledge. Hypervigilance.</p></div>
+    <div class="infoBox"><h3>Positive Outcomes</h3><p>: People are able to integrate ideas and information with experience and intuition which allows balance. Acceptance. Content with their own knowledge. Flexibility. Inner wisdow.</p></div>
+    <p class="credit">(Ausflowers, 2023; Casliber, 2006)</p>
+    <div class="infoBox"><h3>Clinical Applications and Uses</h3>
+      <p>Like most yellow flowers, Hibbertia deals with issues of intellect. It is for people who devour information and philosophies. These people have a great desire to learn, and they are very strict with themselves in the pursuit of knowledge to the point of being fanatical. The purpose behind the pursuit of knowledge is so they can feel superior to others, and is really just an intellectual exercise. They like to be in control and exhibit a lot of self denial and self-repression. Rigidity of the mind is often represented with stiffness of the body and can manifest in a lack of flexibility and hardened attitudes.
+    </p>
+  </div>
+  <div class="infoBox"><h3>Conditions</h3>
+    <p>
+      <ul>
+      <li>Hardening diseases - atherosclerosis, fusing of the joints etc., rigidity, particularly in the bones.</li>
+      <li>This essence works on the parathyroid glands. Their secretion controls the metabolism of calcium and phosphorus in the body and therefore this essence can be used with any bone problems.</li>
+    </ul>
+  </p>
+</div>
+</div>
+
+<div class="imageBar">
+  <img class="ImageAsset"
+    src="Images/Hibbertia-1.png"
+    alt="Hibbertia">
+  <img class="ImageAsset"
+    src="Images/Hibbertia-2.png"
+    alt="Hibbertia"> 
+    <p class="videoLink">
+      <a href="https://youtu.be/p7Lhmi3hrVg" target="_blank">Click here for more information about Hibbertia.</a>   
+</div>
+<footer>
+  <p>Endeavour College of Natural Health © 2023</p>
+</footer>
+      
+</div>
+
+
+  </body>
+
+  <script
+	src="https://code.jquery.com/jquery-3.7.1.js"
+	integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+	crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('.sidebar').toggleClass('active')
+            })
+        })
+    </script>
+		
+		<script>// Function to pause the video when the page loads
+    function pauseVideo() {
+      // Get the iframe element  
+      var iframe = document.getElementById("videoIframe");
+        // Check if the iframe exists  
+        if (iframe) {
+        // Get the content window of the iframe    
+        var iframeContentWindow = iframe.contentWindow;
+            // Check if the content window is accessible    
+            if (iframeContentWindow) {
+          // Pause the video within the iframe      
+          iframeContentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        }
+      }
+    }
+    
+    // Attach the pauseVideo function to the window's onload event
+    window.onload = pauseVideo;
+    </script>
